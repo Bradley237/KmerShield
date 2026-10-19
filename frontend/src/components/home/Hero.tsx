@@ -41,7 +41,7 @@ export const Hero: React.FC = () => {
             <div className="flex flex-col sm:flex-row items-center gap-5 mb-10 w-full sm:w-auto">
               <Link
                 to="/inscription"
-                className="h-[52px] px-8 rounded-lg bg-[var(--primary)] hover:bg-[var(--primary-hover)] active:bg-[var(--primary-active)] text-[var(--on-primary)] font-medium text-base shadow-sm inline-flex items-center justify-center transition w-full sm:w-auto shrink-0 select-none"
+                className="h-[52px] px-8 rounded-lg bg-[var(--primary-solid)] hover:bg-[var(--primary-solid-hover)] active:bg-[var(--primary-solid-active)] text-[var(--on-primary-solid)] font-medium text-base shadow-sm inline-flex items-center justify-center transition w-full sm:w-auto shrink-0 select-none active:scale-[0.98]"
               >
                 {t('home.hero.ctaPrimary')}
               </Link>

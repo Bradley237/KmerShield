@@ -22,8 +22,8 @@ export const NotFound: React.FC = () => {
       </p>
       <Link
         to="/"
-        className="px-6 py-3 rounded-xl font-semibold transition-all hover:opacity-95 shadow-sm min-h-[44px] inline-flex items-center"
-        style={{ backgroundColor: 'var(--primary)', color: 'var(--on-primary)' }}
+        className="px-6 py-3 rounded-xl font-semibold transition-all hover:opacity-95 shadow-sm min-h-[44px] inline-flex items-center active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary-solid)] focus-visible:ring-offset-2"
+        style={{ backgroundColor: 'var(--primary-solid)', color: 'var(--on-primary-solid)' }}
       >
         {t('notFound.button')}
       </Link>

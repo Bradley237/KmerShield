@@ -205,10 +205,10 @@ export const Register: React.FC = () => {
         <button
           type="submit"
           disabled={loading || !consent || !isPasswordValid}
-          className="w-full py-3 rounded-xl font-semibold transition-all hover:opacity-95 shadow-sm disabled:opacity-50 cursor-pointer min-h-[44px] flex items-center justify-center gap-2 mt-4"
+          className="w-full py-3 rounded-xl font-semibold transition-all hover:opacity-95 shadow-sm disabled:opacity-50 cursor-pointer min-h-[44px] flex items-center justify-center gap-2 mt-4 active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary-solid)] focus-visible:ring-offset-2"
           style={{
-            backgroundColor: 'var(--primary)',
-            color: 'var(--on-primary)',
+            backgroundColor: 'var(--primary-solid)',
+            color: 'var(--on-primary-solid)',
           }}
         >
           {loading ? t('auth.register.submitting') : t('auth.register.submitButton')}

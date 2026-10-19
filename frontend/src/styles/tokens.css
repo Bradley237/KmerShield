@@ -23,6 +23,12 @@
   --primary-active: #3730A3;
   --on-primary: #FFFFFF;
 
+  /* Primary Solid (Always Indigo #4F46E5 in every theme and state) */
+  --primary-solid: #4F46E5;
+  --primary-solid-hover: #4338CA;
+  --primary-solid-active: #3730A3;
+  --on-primary-solid: #FFFFFF;
+
   /* Risk Semantic Colors (STRICT RULE: used ONLY by RiskBadge & RiskIndicator) */
   --risk-success: #15803D;
   --risk-success-soft: #ECFDF5;
@@ -113,6 +119,12 @@
   --primary-soft: rgba(129, 140, 248, 0.12);
   --primary-active: #6366F1;
   --on-primary: #FFFFFF;
+
+  /* Primary Solid (Always Indigo #4F46E5 in every theme and state) */
+  --primary-solid: #4F46E5;
+  --primary-solid-hover: #4338CA;
+  --primary-solid-active: #3730A3;
+  --on-primary-solid: #FFFFFF;
 
   /* Risk Semantic Colors */
   --risk-success: #4ADE80;
