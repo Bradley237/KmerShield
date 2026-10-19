@@ -5,9 +5,11 @@ import { ArrowLeft, ShieldCheck, Eye, Lock } from 'lucide-react'
 import { Logo } from '../components/layout/Logo'
 import { LanguageSwitch } from '../components/layout/LanguageSwitch'
 import { ThemeToggle } from '../components/layout/ThemeToggle'
+import { usePageMeta } from '../hooks/usePageMeta'
 
 export const AuthLayout: React.FC = () => {
   const { t } = useTranslation()
+  usePageMeta()
 
   return (
     <div className="min-h-screen grid grid-cols-1 md:grid-cols-2" style={{ backgroundColor: 'var(--bg-app)' }}>

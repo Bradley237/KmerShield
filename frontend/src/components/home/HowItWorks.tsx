@@ -34,7 +34,7 @@ export const HowItWorks: React.FC = () => {
           <div className="mt-16 relative">
             {/* Dotted connecting line drawing from left to right */}
             <div className="hidden md:block absolute top-5 left-[16.666%] right-[16.666%] h-2 z-0 pointer-events-none overflow-hidden">
-              <svg className="w-full h-2" preserveAspectRatio="none" viewBox="0 0 100 2">
+              <svg className="w-full h-2" width="100%" height="8" preserveAspectRatio="none" viewBox="0 0 100 2">
                 <line x1="0" y1="1" x2="100" y2="1" stroke="currentColor" strokeWidth="2" strokeDasharray="4 4" className="text-[var(--border-color)] line-draw" />
               </svg>
             </div>

@@ -27,6 +27,8 @@ export const Logo: React.FC<LogoProps> = ({ className = '', variant = 'default' 
         }}
       >
         <svg
+          width="20"
+          height="20"
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"
