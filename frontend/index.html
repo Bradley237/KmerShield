@@ -1,10 +1,28 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>KmerShield</title>
+    <title>KmerShield — Évaluation du risque de liens et transactions</title>
+    <meta name="description" content="KmerShield aide les citoyens au Cameroun à évaluer le risque d'un lien, d'un message ou d'une transaction financière informelle (Orange Money, MTN Mobile Money)." />
+
+    <!-- Synchronous Theme Script: Prevents theme flash on initial load -->
+    <script>
+      (function() {
+        try {
+          var saved = localStorage.getItem('kmershield_theme');
+          var systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          if (saved === 'dark' || (!saved && systemDark) || (saved === 'auto' && systemDark)) {
+            document.documentElement.setAttribute('data-theme', 'dark');
+          } else {
+            document.documentElement.removeAttribute('data-theme');
+          }
+        } catch (e) {
+          /* Fallback gracefully if localStorage is disabled */
+        }
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>

@@ -1,0 +1,254 @@
+{
+  "brand": {
+    "name": "KmerShield",
+    "tagline": "Civic risk assessment and guidance for online transactions",
+    "footerDescription": "KmerShield — Integrity and guidance for online flows in Cameroon"
+  },
+  "nav": {
+    "howItWorks": "How it works",
+    "limits": "Limits",
+    "faq": "FAQ",
+    "signIn": "Sign In",
+    "signUp": "Create an account",
+    "account": "My Account",
+    "signOut": "Sign Out"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "KMER-SHIELD // CIVIC ANALYSIS PROTOCOL",
+      "headlinePrefix": "Before you pay or click, ",
+      "headlineHighlight": "verify.",
+      "subtitle": "KmerShield evaluates the risk of a link, a message, or an online transaction, and helps you decide what to do next.",
+      "ctaPrimary": "Create an account",
+      "ctaSecondary": "See how it works",
+      "reassurance": "No PIN or payment password is ever requested.",
+      "metaScopeTitle": "SCOPE",
+      "metaScopeValue": "OM, MoMo & Links",
+      "metaMethodTitle": "METHOD",
+      "metaMethodValue": "Heuristics & Community Alerts",
+      "metaPrivacyTitle": "PRIVACY",
+      "metaPrivacyValue": "Zero banking data retention",
+      "card": {
+        "chip": "FICTITIOUS SAMPLE",
+        "label": "Transaction signal",
+        "title": "Full upfront payment demanded",
+        "signal1Title": "Full payment requested before delivery",
+        "signal1Desc": "Recurring pattern across unregulated channels",
+        "signal2Title": "Pressure to act immediately",
+        "signal2Desc": "Artificial urgency frequently observed in suspicious deals",
+        "signal3Title": "No independent verification possible",
+        "signal3Desc": "Account identifier not associated with any registered entity",
+        "recTitle": "KmerShield Recommendation",
+        "recDesc": "Do not rush into paying. Use an official verification channel or arrange for an in-person exchange.",
+        "ref": "REF: EV-2025-0842",
+        "index": "INDEX: 89/100",
+        "disclaimer": "A risk assessment is not proof of fraud. It provides contextual cautionary guidance."
+      }
+    },
+    "problem": {
+      "eyebrow": "THE LOCAL REALITY",
+      "title": "Frequent digital pitfalls in informal commerce",
+      "subtitle": "The rapid growth of peer-to-peer mobile payments exposes users to deceptive solicitations.",
+      "card1": {
+        "title": "Fake offers & advance fees",
+        "description": "Demands for urgent fee transfers for non-existent job offers, parcels, or clearance charges."
+      },
+      "card2": {
+        "title": "Impersonation of trusted brands",
+        "description": "Messages masquerading as official mobile network operators to trick recipients into revealing credentials."
+      },
+      "card3": {
+        "title": "Shortened links & mirror pages",
+        "description": "Deceptive redirects mimicking payment or administrative pages designed to capture personal details."
+      }
+    },
+    "howItWorks": {
+      "eyebrow": "STRAIGHTFORWARD PROCESS",
+      "title": "How the evaluation works",
+      "subtitle": "A transparent three-step workflow to help you make informed decisions in seconds.",
+      "step1": {
+        "number": "01",
+        "title": "Submit an item",
+        "description": "Paste the suspicious link, received message text, or proposed payment arrangement."
+      },
+      "step2": {
+        "number": "02",
+        "title": "Heuristic evaluation",
+        "description": "Our contextual guidelines review the input against known cautionary signals and indicators."
+      },
+      "step3": {
+        "number": "03",
+        "title": "Guidance & next steps",
+        "description": "Receive an intuitive risk rating along with actionable advice before taking any financial action."
+      },
+      "note": "KmerShield does not execute transfers and does not block payments: the final decision is always yours."
+    },
+    "riskLevels": {
+      "eyebrow": "AWARENESS SCALE",
+      "title": "Three clear evaluation levels",
+      "subtitle": "Direct guidance so you can respond with the appropriate level of precaution.",
+      "low": {
+        "label": "Low vigilance required",
+        "description": "The analyzed factors do not show evident anomalies. Standard common-sense precautions apply."
+      },
+      "moderate": {
+        "label": "Caution recommended",
+        "description": "Several atypical indicators were detected. Additional verification is strongly advised."
+      },
+      "high": {
+        "label": "Elevated risk detected",
+        "description": "Multiple red flags typical of questionable schemes were identified. Avoid financial commitments."
+      }
+    },
+    "limits": {
+      "eyebrow": "TRANSPARENCY AND ETHICS",
+      "title": "What KmerShield does and does not do",
+      "subtitle": "An essential ethical boundary to protect trust and independence.",
+      "whatWeDoTitle": "What we provide",
+      "whatWeDoList": [
+        "A contextual analysis framework tailored to regional payment practices",
+        "Identification of weak signals and deceptive urgency tactics",
+        "Preventive recommendations before sending mobile money funds",
+        "A civic space to cultivate digital self-defense instincts"
+      ],
+      "whatWeDontDoTitle": "What we do not do",
+      "whatWeDontDoList": [
+        "No legal proof or absolute guarantee of fraud",
+        "No 100% guarantee of safety for any external link or individual",
+        "No access to or storage of your banking PINs or credentials",
+        "No substitution for law enforcement or regulatory authorities"
+      ],
+      "commitments": {
+        "title": "Our 3 civic commitments",
+        "com1Title": "Absolute neutrality",
+        "com1Desc": "No commercial or financial affiliations influencing our assessments.",
+        "com2Title": "Privacy first",
+        "com2Desc": "Zero archiving of submitted personal or payment details.",
+        "com3Title": "Transparent reasoning",
+        "com3Desc": "Clear breakdown of each cautionary signal highlighted."
+      }
+    },
+    "faq": {
+      "eyebrow": "FREQUENTLY ASKED",
+      "title": "Frequently Asked Questions",
+      "subtitle": "Understand everything regarding the scope and purpose of KmerShield.",
+      "q1": "Is KmerShield an antivirus program?",
+      "a1": "No. KmerShield is not an antivirus tool and does not install software on your phone. It is a civic risk evaluation tool designed to assess the contextual risk of links, messages, and transaction scenarios.",
+      "q2": "Is this service free to use?",
+      "a2": "Yes, core risk evaluations and educational guidance are completely free for all citizens.",
+      "q3": "How do you protect my data?",
+      "a3": "We never ask for or store PINs, passwords, or payment account numbers. Submitted texts are evaluated ephemerally to identify warning patterns without collecting identifiable data.",
+      "q4": "Does a low risk score guarantee total safety?",
+      "a4": "No. No automated algorithm can guarantee 100% safety. KmerShield provides an awareness indicator to assist your decision, but cannot replace personal prudence.",
+      "q5": "What should I do if an elevated risk is detected?",
+      "a5": "Pause all money transfers or document sharing immediately. Contact the organization via official numbers or opt for an in-person, verified handoff."
+    },
+    "finalCta": {
+      "title": "In doubt about a message or payment?",
+      "subtitle": "Create an account in seconds to receive cautionary guidance and protect your everyday interactions.",
+      "button": "Create an account for free",
+      "secondary": "Explore risk guidelines"
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Sign in to your account",
+      "subtitle": "Access your assessment guidelines and personalized guidance.",
+      "emailLabel": "Email address",
+      "emailPlaceholder": "you@example.com",
+      "passwordLabel": "Password",
+      "passwordPlaceholder": "Your password",
+      "forgotPassword": "Forgot password?",
+      "submitButton": "Sign In",
+      "submitting": "Signing in...",
+      "noAccount": "Don't have an account yet?",
+      "signUpLink": "Create an account",
+      "errorTitle": "Sign-in failed",
+      "invalidCredentials": "Email or password incorrect.",
+      "tooManyRequests": "Too many attempts. Please try again in a few moments."
+    },
+    "register": {
+      "title": "Create your KmerShield account",
+      "subtitle": "Join the civic community for safer online exchanges.",
+      "nameLabel": "Name or pseudonym",
+      "namePlaceholder": "e.g. Alex",
+      "emailLabel": "Email address",
+      "emailPlaceholder": "you@example.com",
+      "passwordLabel": "Password",
+      "passwordPlaceholder": "Minimum 8 characters",
+      "reqLength": "At least 8 characters",
+      "reqNumber": "At least one number",
+      "reqSpecial": "At least one special character",
+      "consentLabel": "I accept the terms of service and acknowledge that KmerShield provides cautionary guidance without absolute security guarantees.",
+      "submitButton": "Create my account",
+      "submitting": "Creating account...",
+      "hasAccount": "Already registered?",
+      "signInLink": "Sign In",
+      "errorTitle": "Registration error"
+    },
+    "forgotPassword": {
+      "title": "Password reset",
+      "subtitle": "Enter your email address to receive password reset instructions.",
+      "emailLabel": "Email address",
+      "emailPlaceholder": "you@example.com",
+      "submitButton": "Send instructions",
+      "submitting": "Sending...",
+      "backToLogin": "Back to sign in",
+      "confirmationTitle": "Request received",
+      "confirmationMessage": "If an account exists with this email address, you will receive instructions to reset your password shortly."
+    },
+    "resetPassword": {
+      "title": "Set a new password",
+      "subtitle": "Choose a strong password to secure your account.",
+      "passwordLabel": "New password",
+      "passwordPlaceholder": "Minimum 8 characters",
+      "confirmPasswordLabel": "Confirm password",
+      "confirmPasswordPlaceholder": "Repeat new password",
+      "submitButton": "Update password",
+      "submitting": "Updating...",
+      "successTitle": "Password updated",
+      "successMessage": "Your new password has been saved. You can now sign in.",
+      "expiredTitle": "Link expired or invalid",
+      "expiredMessage": "This password reset link is no longer valid. Please submit a new request.",
+      "requestNewLink": "Request new link"
+    },
+    "sidePanel": {
+      "title": "Civic clarity before any financial decision",
+      "point1": "Spot deceptive patterns across unregulated mobile money channels.",
+      "point2": "Receive actionable recommendations tailored to your transactions.",
+      "point3": "Zero banking data retention and absolute commitment to your privacy."
+    }
+  },
+  "risk": {
+    "levelLow": "Low Risk",
+    "levelModerate": "Moderate Risk",
+    "levelHigh": "High Risk",
+    "fictionalExample": "FICTITIOUS SAMPLE"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "retry": "Try again",
+    "backHome": "Back to Home",
+    "close": "Close",
+    "draftNotice": "Document in drafting phase (Draft)",
+    "draftDescription": "This page outlines the general principles of the KmerShield initiative and will be updated with finalized legal notices.",
+    "theme": {
+      "light": "Light",
+      "dark": "Dark",
+      "auto": "System"
+    }
+  },
+  "notFound": {
+    "title": "Page Not Found",
+    "subtitle": "The page you are looking for does not exist or has been moved.",
+    "button": "Return to Home Page"
+  },
+  "footer": {
+    "copyright": "© 2026 KmerShield. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "contact": "Contact",
+    "legal": "Legal Notices"
+  }
+}
