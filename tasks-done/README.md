@@ -12,6 +12,7 @@ Every agent or developer working on this project **must thoroughly document ever
 - **Why:** The reason and motivation behind the work (the business/architectural requirement it addresses).
 - **How:** The technical implementation details (how it was built, design decisions, APIs, schemas, and configurations).
 - **Key Factors & Dependencies:** Important context, environment variables/keys, prerequisites, breaking changes, or critical notes that teammates must know.
+- **Problems Encountered & Solutions:** Any errors, roadblocks, edge cases, or bugs encountered during the task and exactly how they were resolved.
 
 ---
 
@@ -64,7 +65,12 @@ Explain why this task was necessary, the problem it solves, or user story it imp
 - **Prerequisites / Dependencies:** (Packages installed, migrations needed, etc.).
 - **Gotchas / Known Limitations:** (Any caveats, edge cases, or follow-up items).
 
-### 5. Verification & Testing
+### 5. Problems Encountered & How They Were Solved
+- **Problem / Blocker:** Describe the error, bug, or challenge faced.
+- **Cause:** Why it occurred (root cause, environment discrepancy, missing config, etc.).
+- **Solution / Fix:** Exactly how it was solved (code changes, workarounds, commands run).
+
+### 6. Verification & Testing
 How to test or verify that this task works as expected.
 ```
 
@@ -74,4 +80,6 @@ How to test or verify that this task works as expected.
 
 - **Zero Friction Collaboration:** Teammates and other agents can quickly grasp your work without guessing or reverse-engineering code.
 - **Clean Audit Trail:** Easy tracking of architectural decisions and progress.
+- **Shared Problem-Solving:** Documenting roadblocks and their fixes prevents others from wasting time solving the same issues.
 - **Smooth Integration:** Minimizes integration bugs and misconfigurations.
+
