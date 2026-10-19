@@ -5,6 +5,7 @@
   --color-background: var(--bg-app);
   --color-surface: var(--bg-surface);
   --color-surface-secondary: var(--bg-surface-secondary);
+  --color-surface-raised: var(--bg-surface-raised);
   --color-text: var(--text-main);
   --color-text-main: var(--text-main);
   --color-muted: var(--text-muted);

@@ -84,7 +84,7 @@ export const Hero: React.FC = () => {
           {/* RIGHT COLUMN (7 cols, Layered Narrative Visual) */}
           <div className="lg:col-span-7 relative flex flex-col items-center justify-center">
             {/* Soft Indigo Glow centered behind card */}
-            <div className="absolute -inset-4 bg-indigo-500/10 dark:bg-indigo-500/20 blur-3xl rounded-full pointer-events-none transform -translate-y-4" />
+            <div className="absolute -inset-4 bg-indigo-500/8 dark:bg-indigo-500/10 blur-3xl rounded-full pointer-events-none transform -translate-y-4" />
 
             {/* Subtle Context Pill */}
             <div className="self-end mb-2.5 mr-2">
