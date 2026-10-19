@@ -11,17 +11,13 @@ export const ThemeToggle: React.FC<{ className?: string }> = ({ className = '' }
     <button
       type="button"
       onClick={cycleTheme}
-      className={`p-2 rounded-lg transition-colors cursor-pointer inline-flex items-center justify-center min-w-[36px] min-h-[36px] ${className}`}
-      style={{
-        backgroundColor: 'transparent',
-        color: 'var(--text-muted)',
-      }}
-      title={`Thème: ${t(`common.theme.${theme}`)} (Cliquer pour changer)`}
+      className={`p-2 rounded-lg text-[var(--text-muted)] hover:text-[var(--text-main)] hover:bg-[var(--bg-surface-secondary)] transition-colors cursor-pointer inline-flex items-center justify-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary)] ${className}`}
+      title={`Thème: ${t(`common.theme.${theme}`)}`}
       aria-label={`Changer de thème (actuel: ${t(`common.theme.${theme}`)})`}
     >
-      {theme === 'light' && <Sun size={18} strokeWidth={1.5} />}
-      {theme === 'dark' && <Moon size={18} strokeWidth={1.5} />}
-      {theme === 'auto' && <Monitor size={18} strokeWidth={1.5} />}
+      {theme === 'light' && <Sun className="w-4 h-4" strokeWidth={1.5} />}
+      {theme === 'dark' && <Moon className="w-4 h-4" strokeWidth={1.5} />}
+      {theme === 'auto' && <Monitor className="w-4 h-4" strokeWidth={1.5} />}
     </button>
   )
 }

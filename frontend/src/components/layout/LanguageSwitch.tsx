@@ -13,22 +13,17 @@ export const LanguageSwitch: React.FC = () => {
     <div
       role="group"
       aria-label="Sélection de langue / Language selector"
-      className="inline-flex items-center rounded-lg p-0.5 text-xs font-semibold"
-      style={{
-        backgroundColor: 'var(--bg-surface-secondary)',
-        border: '1px solid var(--border-color)',
-      }}
+      className="inline-flex items-center bg-[var(--bg-surface-secondary)] p-0.5 rounded-full border border-[var(--border-color)]"
     >
       <button
         type="button"
         onClick={() => changeLanguage('fr')}
         aria-pressed={currentLang === 'fr'}
-        className="px-2 py-1 rounded-md transition-all cursor-pointer min-w-[28px] text-center"
-        style={{
-          backgroundColor: currentLang === 'fr' ? 'var(--bg-surface)' : 'transparent',
-          color: currentLang === 'fr' ? 'var(--text-main)' : 'var(--text-muted)',
-          boxShadow: currentLang === 'fr' ? 'var(--shadow-soft-sm)' : 'none',
-        }}
+        className={`px-2.5 py-1 text-xs transition-all cursor-pointer rounded-full ${
+          currentLang === 'fr'
+            ? 'font-semibold text-[var(--text-main)] bg-[var(--bg-surface)] shadow-xs'
+            : 'font-medium text-[var(--text-muted)] hover:text-[var(--text-main)]'
+        }`}
       >
         FR
       </button>
@@ -36,12 +31,11 @@ export const LanguageSwitch: React.FC = () => {
         type="button"
         onClick={() => changeLanguage('en')}
         aria-pressed={currentLang === 'en'}
-        className="px-2 py-1 rounded-md transition-all cursor-pointer min-w-[28px] text-center"
-        style={{
-          backgroundColor: currentLang === 'en' ? 'var(--bg-surface)' : 'transparent',
-          color: currentLang === 'en' ? 'var(--text-main)' : 'var(--text-muted)',
-          boxShadow: currentLang === 'en' ? 'var(--shadow-soft-sm)' : 'none',
-        }}
+        className={`px-2.5 py-1 text-xs transition-all cursor-pointer rounded-full ${
+          currentLang === 'en'
+            ? 'font-semibold text-[var(--text-main)] bg-[var(--bg-surface)] shadow-xs'
+            : 'font-medium text-[var(--text-muted)] hover:text-[var(--text-main)]'
+        }`}
       >
         EN
       </button>

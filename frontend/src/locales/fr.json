@@ -2,7 +2,7 @@
   "brand": {
     "name": "KmerShield",
     "tagline": "Évaluation citoyenne et conseils sur les transactions en ligne",
-    "footerDescription": "KmerShield — Intégrité et repères pour les flux en ligne au Cameroun"
+    "footerDescription": "Évaluation du risque et conseils pour des échanges en ligne plus sûrs."
   },
   "nav": {
     "howItWorks": "Fonctionnement",
@@ -18,136 +18,177 @@
       "eyebrow": "KMER-SHIELD // PROTOCOLE D'ANALYSE CIVIQUE",
       "headlinePrefix": "Avant de payer ou de cliquer, ",
       "headlineHighlight": "vérifiez.",
-      "subtitle": "KmerShield évalue le risque d'un lien, d'un message ou d'une transaction en ligne, et vous dit quoi faire ensuite.",
+      "subtitle": "KmerShield évalue le risque d’un lien, d’un message ou d’une transaction, et vous dit quoi faire ensuite.",
       "ctaPrimary": "Créer un compte",
       "ctaSecondary": "Voir comment ça marche",
-      "reassurance": "Aucun code PIN ni mot de passe de paiement demandé.",
-      "metaScopeTitle": "PÉRIMÈTRE",
-      "metaScopeValue": "OM, MoMo & Liens",
-      "metaMethodTitle": "MÉTHODE",
-      "metaMethodValue": "Heuristique & Signalements",
-      "metaPrivacyTitle": "CONFIDENTIALITÉ",
-      "metaPrivacyValue": "Zéro rétention bancaire",
+      "reassurance1": "Vos liens ne sont jamais ouverts",
+      "reassurance2": "Aucun code PIN ni mot de passe demandé",
+      "reassurance3": "Des conseils, pas un verdict",
+      "examplePill": "Exemple fictif",
+      "bubble": {
+        "sender": "Vendeur marketplace",
+        "time": "14:22",
+        "greeting": "Bonjour, le téléphone est à 185 000 FCFA. ",
+        "alert1": "Envoie tout maintenant",
+        "middle": ", ",
+        "alert2": "je ne garde pas longtemps",
+        "period": "."
+      },
       "card": {
-        "chip": "EXEMPLE FICTIF",
-        "label": "Signal de transaction",
-        "title": "Paiement intégral exigé d'avance",
-        "signal1Title": "Paiement complet demandé avant livraison",
-        "signal1Desc": "Modèle récurrent sur les canaux non-régulés",
-        "signal2Title": "Pression pour agir immédiatement",
-        "signal2Desc": "Urgence artificielle signalée à maintes reprises",
-        "signal3Title": "Aucune vérification indépendante possible",
-        "signal3Desc": "Identifiant de compte non lié à une entité enregistrée",
-        "recTitle": "Recommandation KmerShield",
-        "recDesc": "Ne précipitez pas le paiement. Utilisez un canal de vérification officiel ou sollicitez une remise en main propre.",
-        "ref": "REF: EV-2025-0842",
-        "index": "INDEX: 89/100",
-        "disclaimer": "Une évaluation du risque n'est pas une preuve de fraude. Elle constitue une indication d'alerte contextuelle."
+        "analysisTitle": "Analyse KmerShield",
+        "riskBadge": "Risque élevé",
+        "levelLow": "Faible",
+        "levelMedium": "Vigilance",
+        "levelHigh": "Élevé",
+        "reason1Title": "Paiement complet demandé d'avance",
+        "reason1Desc": "Exigence d'un transfert intégral avant toute remise du bien.",
+        "reason2Title": "Pression pour agir vite",
+        "reason2Desc": "Urgence artificielle incitant à contourner les vérifications d'usage.",
+        "reason3Title": "Aucune vérification indépendante",
+        "reason3Desc": "Identité ou annonce non validable via un registre ou tiers de confiance.",
+        "recommendation": "Ne précipitez pas le paiement. Passez par un canal de vérification officiel ou convenez d'une remise en main propre sécurisée.",
+        "floatingChip": "Analysé sans ouvrir le lien",
+        "disclaimer": "Une évaluation du risque n'est pas une preuve de fraude. Elle fournit un repère d'aide à la décision."
       }
     },
     "problem": {
-      "eyebrow": "RÉALITÉ DU TERRAIN",
-      "title": "Les pièges numériques les plus fréquents",
-      "subtitle": "L'accélération des échanges informels expose les utilisateurs à des incitations trompeuses.",
+      "title": "Trois situations que vous connaissez déjà.",
+      "subtitle": "Sur WhatsApp et Facebook, on achète et on vend sans filet. Au moment de décider, personne ne vous aide.",
       "card1": {
-        "title": "Fausses offres et avances indues",
-        "description": "Demande de transferts immédiats sous prétexte de frais de déblocage ou d'opportunités d'emploi inexistantes."
+        "step": "01",
+        "mockSender": "SMS Inconnu",
+        "mockTime": "11:04",
+        "mockPrefix": "Votre colis est bloqué. Confirmez ici : ",
+        "mockLink": "paiement-bonus-mobile.xyz",
+        "title": "Un lien inconnu arrive.",
+        "description": "Un SMS ou un message vous presse de cliquer.",
+        "action": "Analyse de lien"
       },
       "card2": {
-        "title": "Usurpation d'identités locales",
-        "description": "Messages prétendant provenir d'opérateurs ou d'institutions publiques pour inciter au partage d'informations sensibles."
+        "step": "02",
+        "mockSender": "Contact inconnu",
+        "mockTime": "17:41",
+        "mockText": "Envoyez le montant complet avant ce soir.",
+        "mockBadge": "Paiement demandé d'avance",
+        "title": "Un vendeur veut tout, tout de suite.",
+        "description": "Payez d'avance, sinon l'offre part ailleurs.",
+        "action": "Questionnaire de transaction"
       },
       "card3": {
-        "title": "Liens courts et pages miroirs",
-        "description": "Redirections trompeuses imitant des formulaires administratifs ou de paiement pour capturer vos coordonnées."
-      }
+        "step": "03",
+        "mockBadge": "Capture reçue",
+        "title": "Un client dit avoir payé.",
+        "description": "Une capture d'écran n'est pas un paiement.",
+        "action": "Vérification de paiement"
+      },
+      "closingQuestion": "Dans chaque cas, la même question : puis-je faire confiance à cela ?",
+      "closingCta": "KmerShield vous aide à y répondre."
     },
     "howItWorks": {
-      "eyebrow": "DÉMARCHE SIMPLE",
-      "title": "Comment fonctionne l'analyse",
-      "subtitle": "Un parcours clair en trois étapes pour éclairer vos décisions en quelques secondes.",
+      "title": "De l'incertitude à une décision claire.",
+      "subtitle": "Collez ce que vous avez reçu. KmerShield explique les signaux d'alerte et vous dit quoi faire.",
       "step1": {
-        "number": "01",
-        "title": "Soumettez un élément",
-        "description": "Collez le lien suspect, le texte du message reçu ou le scénario de paiement proposé."
+        "number": "1",
+        "title": "Collez",
+        "description": "Un lien, un message, ou répondez à quelques questions sur la transaction.",
+        "inputPlaceholder": "Collez un lien ou un message ici",
+        "action": "Analyser"
       },
       "step2": {
-        "number": "02",
-        "title": "Examen heuristique",
-        "description": "Nos règles contextuelles comparent l'élément aux signaux d'alerte et signalements connus."
+        "number": "2",
+        "title": "Comprenez",
+        "description": "Chaque signal d'alerte est expliqué en mots simples.",
+        "signal1": "Urgence artificielle",
+        "signal2": "Demande de paiement d'avance"
       },
       "step3": {
-        "number": "03",
-        "title": "Repères et recommandations",
-        "description": "Recevez un indice de vigilance clair et des conseils pratiques avant d'entreprendre toute démarche."
-      },
-      "note": "KmerShield n'exécute aucun virement et ne bloque aucune transaction : le choix final reste le vôtre."
-    },
-    "riskLevels": {
-      "eyebrow": "ÉCHELLE DE VIGILANCE",
-      "title": "Trois niveaux d'appréciation clairs",
-      "subtitle": "Une lecture directe pour réagir avec le niveau de précaution adapté.",
-      "low": {
-        "label": "Faible vigilance requise",
-        "description": "Les indicateurs analysés ne présentent pas d'anomalie flagrante. Maintenez les précautions de bon sens."
-      },
-      "moderate": {
-        "label": "Vigilance recommandée",
-        "description": "Plusieurs éléments atypiques ont été identifiés. Une vérification supplémentaire est fortement conseillée."
-      },
-      "high": {
-        "label": "Risque élevé détecté",
-        "description": "L'élément regroupe de multiples signaux caractéristiques de manœuvres abusives. Évitez tout engagement financier."
+        "number": "3",
+        "title": "Décidez",
+        "description": "Un conseil clair, jamais une accusation.",
+        "advice": "Demandez une vérification indépendante avant de payer."
       }
     },
+    "riskLevels": {
+      "title": "Trois niveaux, jamais de pourcentage.",
+      "subtitle": "Un niveau n'est pas une preuve : c'est un repère pour décider.",
+      "whatToDo": "Que faire",
+      "low": {
+        "label": "Risque faible",
+        "headline": "Peu de signaux détectés. Des informations peuvent manquer.",
+        "action": "Continuez à vérifier les conditions et les paiements officiels."
+      },
+      "moderate": {
+        "label": "Vigilance",
+        "headline": "Plusieurs incertitudes ou un signal d'alerte notable.",
+        "action": "Demandez une vérification indépendante. Évitez les décisions irréversibles."
+      },
+      "high": {
+        "label": "Risque élevé",
+        "headline": "Plusieurs signaux forts ou un échec critique de vérification.",
+        "action": "Ne précipitez pas le paiement. Passez par un canal officiel."
+      },
+      "note": "« Risque faible » ne veut jamais dire « sans danger »."
+    },
     "limits": {
-      "eyebrow": "TRANSPARENCE ET RESPONSABILITÉ",
-      "title": "Ce que KmerShield fait et ne fait pas",
-      "subtitle": "Une frontière éthique indispensable pour préserver la confiance et la neutralité de l'outil.",
-      "whatWeDoTitle": "Ce que nous apportons",
+      "title": "Un outil honnête sur ses limites.",
+      "subtitle": "Un bon conseil dit aussi ce qu'il ne sait pas faire.",
+      "whatWeDoTitle": "Ce que fait KmerShield",
       "whatWeDoList": [
-        "Une grille de lecture contextuelle adaptée aux pratiques locales",
-        "L'identification de signaux faibles et d'urgences suspectes",
-        "Des conseils préventifs avant tout transfert d'argent",
-        "Un espace d'apprentissage citoyen pour développer ses réflexes"
+        "Repère les signes d'un lien trompeur, sans jamais l'ouvrir.",
+        "Explique les signaux d'alerte d'un message.",
+        "Pose des questions simples sur une transaction.",
+        "Guide la vérification d'un paiement annoncé.",
+        "Propose une autoévaluation après un clic douteux."
       ],
-      "whatWeDontDoTitle": "Ce que nous ne faisons pas",
+      "whatWeDontDoTitle": "Ce qu'il ne fait pas",
       "whatWeDontDoList": [
-        "Aucune preuve juridique ou certitude absolue de fraude",
-        "Aucune garantie de sécurité à 100 % sur un lien ou un tiers",
-        "Aucun accès ou stockage de vos identifiants ou codes secrets",
-        "Aucune substitution aux autorités policières ou judiciaires"
+        "Il ne prouve pas qu'une personne est un escroc.",
+        "Il ne garantit jamais qu'un lien ou une offre est sûr.",
+        "Il ne confirme pas un paiement à votre place.",
+        "Il ne supprime pas de virus et ne scanne pas votre téléphone.",
+        "Il ne publie aucune accusation."
       ],
       "commitments": {
-        "title": "Nos 3 engagements civiques",
-        "com1Title": "Neutralité absolue",
-        "com1Desc": "Aucune affiliation commerciale ou financière influençant nos analyses.",
-        "com2Title": "Protection de la vie privée",
-        "com2Desc": "Zéro archivage des données personnelles ou financières soumises.",
-        "com3Title": "Transparence des méthodes",
-        "com3Desc": "Explication claire de chaque facteur de risque mis en évidence."
+        "com1Title": "Jamais de mot de passe.",
+        "com1Desc": "Nous ne demandons jamais de mot de passe, de code PIN ni de code OTP.",
+        "com2Title": "Signalements privés.",
+        "com2Desc": "Examinés par des modérateurs, jamais publiés automatiquement.",
+        "com3Title": "Du risque, pas des coupables.",
+        "com3Desc": "Nous parlons de signaux, pas d'accusations."
       }
     },
     "faq": {
-      "eyebrow": "QUESTIONS COURANTES",
-      "title": "Foire aux questions",
-      "subtitle": "Tout comprendre sur l'utilisation et la portée de KmerShield.",
-      "q1": "KmerShield est-il un antivirus ?",
-      "a1": "Non. KmerShield n'est pas un logiciel antivirus et n'installe aucun composant sur votre appareil. C'est un outil d'assistance et de conseil qui évalue le contexte d'un lien, d'un message ou d'une transaction proposée.",
-      "q2": "Le service est-il gratuit ?",
-      "a2": "Oui, les fonctionnalités d'évaluation civique et de consultation des conseils sont totalement accessibles à tous les citoyens.",
-      "q3": "Comment protégez-vous mes données ?",
-      "a3": "Nous ne collectons aucun code confidentiel, numéro de compte ou mot de passe. Les textes analysés sont traités de manière anonymisée afin d'extraire les motifs de vigilance sans conserver d'informations nominatives.",
-      "q4": "Une évaluation favorable garantit-elle une sécurité absolue ?",
-      "a4": "Non. Aucun algorithme ne peut offrir une garantie à 100 %. KmerShield fournit une indication de vigilance pour vous aider à décider, mais ne remplace jamais votre discernement personnel.",
-      "q5": "Que faire si un risque élevé est indiqué ?",
-      "a5": "Suspendez immédiatement tout paiement ou envoi de document. Vérifiez les informations auprès du canal officiel de l'entité concernée ou privilégiez une transaction directe et vérifiable."
+      "title": "Questions fréquentes.",
+      "subtitle": "Une autre question ?",
+      "contactLink": "Écrivez-nous →",
+      "items": [
+        {
+          "question": "KmerShield peut-il me dire si quelqu'un est un escroc ?",
+          "answer": "Non. L'application évalue le risque à partir de signaux observables. Elle ne prouve rien et n'accuse personne."
+        },
+        {
+          "question": "« Risque faible » veut dire que je peux payer sans souci ?",
+          "answer": "Non. Cela signifie que peu de signaux ont été détectés, mais des informations peuvent manquer. Continuez à vérifier auprès des canaux officiels."
+        },
+        {
+          "question": "Mes liens sont-ils ouverts par KmerShield ?",
+          "answer": "Jamais. Un lien est analysé comme du texte : orthographe du domaine, sous-domaines trompeurs, structure inhabituelle. Il n'est ni ouvert ni exécuté."
+        },
+        {
+          "question": "Vérifiez-vous mon paiement à ma place ?",
+          "answer": "Non. L'application vous guide pour vérifier dans l'historique officiel de votre prestataire, en comparant montant et référence. Une capture d'écran n'est jamais une preuve."
+        },
+        {
+          "question": "Que devient mon signalement d'incident ?",
+          "answer": "Il est réservé aux utilisateurs inscrits. Vous recevez un identifiant de suivi, un modérateur l'examine en privé, et rien n'est publié automatiquement. Vous suivez son statut."
+        }
+      ]
     },
     "finalCta": {
-      "title": "Un doute sur un message ou un paiement ?",
-      "subtitle": "Créez votre compte en un instant pour bénéficier de nos conseils et protéger vos démarches quotidiennes.",
-      "button": "Créer un compte gratuitement",
-      "secondary": "Consulter les repères de risque"
+      "title": "Votre prochaine décision mérite un second avis.",
+      "subtitle": "Disponible en français et en anglais. Aucun code PIN ni mot de passe de paiement demandé.",
+      "button": "Créer un compte",
+      "secondary": "Se connecter"
     }
   },
   "auth": {
@@ -245,9 +286,9 @@
     "button": "Retour à la page d'accueil"
   },
   "footer": {
-    "copyright": "© 2026 KmerShield. Tous droits réservés.",
+    "copyright": "© 2026 KmerShield",
     "privacy": "Confidentialité",
-    "terms": "Conditions d'utilisation",
+    "terms": "Conditions",
     "contact": "Contact",
     "legal": "Mentions légales"
   }

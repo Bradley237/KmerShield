@@ -2,7 +2,7 @@
   "brand": {
     "name": "KmerShield",
     "tagline": "Civic risk assessment and guidance for online transactions",
-    "footerDescription": "KmerShield — Integrity and guidance for online flows in Cameroon"
+    "footerDescription": "Risk evaluation and guidance for safer online transactions."
   },
   "nav": {
     "howItWorks": "How it works",
@@ -18,136 +18,177 @@
       "eyebrow": "KMER-SHIELD // CIVIC ANALYSIS PROTOCOL",
       "headlinePrefix": "Before you pay or click, ",
       "headlineHighlight": "verify.",
-      "subtitle": "KmerShield evaluates the risk of a link, a message, or an online transaction, and helps you decide what to do next.",
+      "subtitle": "KmerShield assesses the risk of a link, message, or online transaction, and tells you what to do next.",
       "ctaPrimary": "Create an account",
       "ctaSecondary": "See how it works",
-      "reassurance": "No PIN or payment password is ever requested.",
-      "metaScopeTitle": "SCOPE",
-      "metaScopeValue": "OM, MoMo & Links",
-      "metaMethodTitle": "METHOD",
-      "metaMethodValue": "Heuristics & Community Alerts",
-      "metaPrivacyTitle": "PRIVACY",
-      "metaPrivacyValue": "Zero banking data retention",
+      "reassurance1": "Your links are never opened",
+      "reassurance2": "No PIN or payment password required",
+      "reassurance3": "Guidance, not a verdict",
+      "examplePill": "Fictional example",
+      "bubble": {
+        "sender": "Marketplace seller",
+        "time": "14:22",
+        "greeting": "Hello, the phone is 185,000 FCFA. ",
+        "alert1": "Send everything now",
+        "middle": ", ",
+        "alert2": "I won't hold it for long",
+        "period": "."
+      },
       "card": {
-        "chip": "FICTITIOUS SAMPLE",
-        "label": "Transaction signal",
-        "title": "Full upfront payment demanded",
-        "signal1Title": "Full payment requested before delivery",
-        "signal1Desc": "Recurring pattern across unregulated channels",
-        "signal2Title": "Pressure to act immediately",
-        "signal2Desc": "Artificial urgency frequently observed in suspicious deals",
-        "signal3Title": "No independent verification possible",
-        "signal3Desc": "Account identifier not associated with any registered entity",
-        "recTitle": "KmerShield Recommendation",
-        "recDesc": "Do not rush into paying. Use an official verification channel or arrange for an in-person exchange.",
-        "ref": "REF: EV-2025-0842",
-        "index": "INDEX: 89/100",
-        "disclaimer": "A risk assessment is not proof of fraud. It provides contextual cautionary guidance."
+        "analysisTitle": "KmerShield Analysis",
+        "riskBadge": "High risk",
+        "levelLow": "Low",
+        "levelMedium": "Caution",
+        "levelHigh": "High",
+        "reason1Title": "Full advance payment requested",
+        "reason1Desc": "Requirement of full transfer prior to any product handover.",
+        "reason2Title": "Pressure to act quickly",
+        "reason2Desc": "Artificial urgency pushing to bypass regular verifications.",
+        "reason3Title": "No independent verification",
+        "reason3Desc": "Identity or listing cannot be validated via trusted registry.",
+        "recommendation": "Do not rush into payment. Use an official verification channel or arrange a secure in-person handover.",
+        "floatingChip": "Analyzed without opening the link",
+        "disclaimer": "A risk assessment is not proof of fraud. It provides contextual guidance to assist your decision."
       }
     },
     "problem": {
-      "eyebrow": "THE LOCAL REALITY",
-      "title": "Frequent digital pitfalls in informal commerce",
-      "subtitle": "The rapid growth of peer-to-peer mobile payments exposes users to deceptive solicitations.",
+      "title": "Three situations you already know.",
+      "subtitle": "On WhatsApp and Facebook, we buy and sell without a safety net. When it comes time to decide, no one is there to help.",
       "card1": {
-        "title": "Fake offers & advance fees",
-        "description": "Demands for urgent fee transfers for non-existent job offers, parcels, or clearance charges."
+        "step": "01",
+        "mockSender": "Unknown SMS",
+        "mockTime": "11:04",
+        "mockPrefix": "Your package is held. Confirm here: ",
+        "mockLink": "paiement-bonus-mobile.xyz",
+        "title": "An unknown link arrives.",
+        "description": "An SMS or message urges you to click immediately.",
+        "action": "Link analysis"
       },
       "card2": {
-        "title": "Impersonation of trusted brands",
-        "description": "Messages masquerading as official mobile network operators to trick recipients into revealing credentials."
+        "step": "02",
+        "mockSender": "Unknown contact",
+        "mockTime": "17:41",
+        "mockText": "Send the full amount before this evening.",
+        "mockBadge": "Upfront payment requested",
+        "title": "A seller wants everything, right away.",
+        "description": "Pay in advance, or the deal goes to someone else.",
+        "action": "Transaction questionnaire"
       },
       "card3": {
-        "title": "Shortened links & mirror pages",
-        "description": "Deceptive redirects mimicking payment or administrative pages designed to capture personal details."
-      }
+        "step": "03",
+        "mockBadge": "Screenshot received",
+        "title": "A buyer claims to have paid.",
+        "description": "A screenshot is not proof of payment.",
+        "action": "Payment verification"
+      },
+      "closingQuestion": "In every case, the same question arises: can I trust this?",
+      "closingCta": "KmerShield helps you answer it."
     },
     "howItWorks": {
-      "eyebrow": "STRAIGHTFORWARD PROCESS",
-      "title": "How the evaluation works",
-      "subtitle": "A transparent three-step workflow to help you make informed decisions in seconds.",
+      "title": "From uncertainty to a clear decision.",
+      "subtitle": "Paste what you received. KmerShield explains the warning signs and tells you what to do next.",
       "step1": {
-        "number": "01",
-        "title": "Submit an item",
-        "description": "Paste the suspicious link, received message text, or proposed payment arrangement."
+        "number": "1",
+        "title": "Paste",
+        "description": "A link, a message, or answer a few quick questions about the transaction.",
+        "inputPlaceholder": "Paste a link or message here",
+        "action": "Analyze"
       },
       "step2": {
-        "number": "02",
-        "title": "Heuristic evaluation",
-        "description": "Our contextual guidelines review the input against known cautionary signals and indicators."
+        "number": "2",
+        "title": "Understand",
+        "description": "Every alert signal is explained in simple words.",
+        "signal1": "Artificial urgency",
+        "signal2": "Upfront payment demand"
       },
       "step3": {
-        "number": "03",
-        "title": "Guidance & next steps",
-        "description": "Receive an intuitive risk rating along with actionable advice before taking any financial action."
-      },
-      "note": "KmerShield does not execute transfers and does not block payments: the final decision is always yours."
-    },
-    "riskLevels": {
-      "eyebrow": "AWARENESS SCALE",
-      "title": "Three clear evaluation levels",
-      "subtitle": "Direct guidance so you can respond with the appropriate level of precaution.",
-      "low": {
-        "label": "Low vigilance required",
-        "description": "The analyzed factors do not show evident anomalies. Standard common-sense precautions apply."
-      },
-      "moderate": {
-        "label": "Caution recommended",
-        "description": "Several atypical indicators were detected. Additional verification is strongly advised."
-      },
-      "high": {
-        "label": "Elevated risk detected",
-        "description": "Multiple red flags typical of questionable schemes were identified. Avoid financial commitments."
+        "number": "3",
+        "title": "Decide",
+        "description": "Clear guidance, never an accusation.",
+        "advice": "Request an independent verification before making any payment."
       }
     },
+    "riskLevels": {
+      "title": "Three levels, never a percentage.",
+      "subtitle": "A risk level is not proof: it is a practical guide to help you decide.",
+      "whatToDo": "What to do",
+      "low": {
+        "label": "Low risk",
+        "headline": "Few warning signals detected. Contextual information may be missing.",
+        "action": "Keep verifying official terms and verified payment methods."
+      },
+      "moderate": {
+        "label": "Caution",
+        "headline": "Multiple uncertainties or a notable warning signal identified.",
+        "action": "Seek independent verification. Avoid irreversible payment choices."
+      },
+      "high": {
+        "label": "High risk",
+        "headline": "Multiple strong signals or critical verification failure.",
+        "action": "Do not rush into paying. Use an official, recognized channel."
+      },
+      "note": "“Low risk” never means “zero danger”."
+    },
     "limits": {
-      "eyebrow": "TRANSPARENCY AND ETHICS",
-      "title": "What KmerShield does and does not do",
-      "subtitle": "An essential ethical boundary to protect trust and independence.",
-      "whatWeDoTitle": "What we provide",
+      "title": "A tool that is honest about its limits.",
+      "subtitle": "Good advice also states what it cannot do.",
+      "whatWeDoTitle": "What KmerShield does",
       "whatWeDoList": [
-        "A contextual analysis framework tailored to regional payment practices",
-        "Identification of weak signals and deceptive urgency tactics",
-        "Preventive recommendations before sending mobile money funds",
-        "A civic space to cultivate digital self-defense instincts"
+        "Identifies signs of a misleading link, without ever opening it.",
+        "Explains warning signals found in a message.",
+        "Asks straightforward questions about a transaction.",
+        "Guides verification of an unconfirmed payment.",
+        "Offers self-assessment guidance after an accidental click."
       ],
-      "whatWeDontDoTitle": "What we do not do",
+      "whatWeDontDoTitle": "What it does not do",
       "whatWeDontDoList": [
-        "No legal proof or absolute guarantee of fraud",
-        "No 100% guarantee of safety for any external link or individual",
-        "No access to or storage of your banking PINs or credentials",
-        "No substitution for law enforcement or regulatory authorities"
+        "It does not prove whether someone is a scammer.",
+        "It never guarantees that a link or deal is completely safe.",
+        "It does not confirm a payment on your behalf.",
+        "It does not remove viruses or scan your phone storage.",
+        "It publishes zero accusations."
       ],
       "commitments": {
-        "title": "Our 3 civic commitments",
-        "com1Title": "Absolute neutrality",
-        "com1Desc": "No commercial or financial affiliations influencing our assessments.",
-        "com2Title": "Privacy first",
-        "com2Desc": "Zero archiving of submitted personal or payment details.",
-        "com3Title": "Transparent reasoning",
-        "com3Desc": "Clear breakdown of each cautionary signal highlighted."
+        "com1Title": "Never any password.",
+        "com1Desc": "We never ask for your password, PIN code, or OTP verification code.",
+        "com2Title": "Private reports.",
+        "com2Desc": "Reviewed confidentially by human moderators, never posted automatically.",
+        "com3Title": "Assessing risk, not guilt.",
+        "com3Desc": "We focus on factual warning signals, never personal accusations."
       }
     },
     "faq": {
-      "eyebrow": "FREQUENTLY ASKED",
-      "title": "Frequently Asked Questions",
-      "subtitle": "Understand everything regarding the scope and purpose of KmerShield.",
-      "q1": "Is KmerShield an antivirus program?",
-      "a1": "No. KmerShield is not an antivirus tool and does not install software on your phone. It is a civic risk evaluation tool designed to assess the contextual risk of links, messages, and transaction scenarios.",
-      "q2": "Is this service free to use?",
-      "a2": "Yes, core risk evaluations and educational guidance are completely free for all citizens.",
-      "q3": "How do you protect my data?",
-      "a3": "We never ask for or store PINs, passwords, or payment account numbers. Submitted texts are evaluated ephemerally to identify warning patterns without collecting identifiable data.",
-      "q4": "Does a low risk score guarantee total safety?",
-      "a4": "No. No automated algorithm can guarantee 100% safety. KmerShield provides an awareness indicator to assist your decision, but cannot replace personal prudence.",
-      "q5": "What should I do if an elevated risk is detected?",
-      "a5": "Pause all money transfers or document sharing immediately. Contact the organization via official numbers or opt for an in-person, verified handoff."
+      "title": "Frequently Asked Questions.",
+      "subtitle": "Have another question?",
+      "contactLink": "Write to us →",
+      "items": [
+        {
+          "question": "Can KmerShield tell me if someone is a scammer?",
+          "answer": "No. The application assesses risk based on observable signals. It proves nothing and accuses no one."
+        },
+        {
+          "question": "Does “low risk” mean I can pay with zero worries?",
+          "answer": "No. It means few signals were detected, but information may be incomplete. Always continue verifying through official channels."
+        },
+        {
+          "question": "Are my links opened by KmerShield?",
+          "answer": "Never. A link is analyzed strictly as plain text: domain spelling, deceptive subdomains, unusual syntax. It is never visited or executed."
+        },
+        {
+          "question": "Do you verify my payment for me?",
+          "answer": "No. The application guides you to check your provider’s official transaction history, matching the exact amount and reference ID. A screenshot is never proof."
+        },
+        {
+          "question": "What happens to my incident report?",
+          "answer": "Incident reporting is reserved for registered users. You receive a tracking ID, a moderator reviews it privately, and nothing is published automatically. You can follow its status."
+        }
+      ]
     },
     "finalCta": {
-      "title": "In doubt about a message or payment?",
-      "subtitle": "Create an account in seconds to receive cautionary guidance and protect your everyday interactions.",
-      "button": "Create an account for free",
-      "secondary": "Explore risk guidelines"
+      "title": "Your next decision deserves a second opinion.",
+      "subtitle": "Available in French and English. No PIN code or payment password required.",
+      "button": "Create an account",
+      "secondary": "Sign In"
     }
   },
   "auth": {
@@ -245,10 +286,10 @@
     "button": "Return to Home Page"
   },
   "footer": {
-    "copyright": "© 2026 KmerShield. All rights reserved.",
-    "privacy": "Privacy Policy",
-    "terms": "Terms of Service",
+    "copyright": "© 2026 KmerShield",
+    "privacy": "Privacy",
+    "terms": "Terms",
     "contact": "Contact",
-    "legal": "Legal Notices"
+    "legal": "Legal"
   }
 }
