@@ -8,17 +8,20 @@ import {
   Clock,
   Info,
 } from 'lucide-react'
+import { useReveal } from '../../hooks/useReveal'
 
 export const HowItWorks: React.FC = () => {
   const { t } = useTranslation()
+  const part1Ref = useReveal<HTMLDivElement>()
+  const part2Ref = useReveal<HTMLDivElement>()
 
   return (
     <section className="w-full border-t border-[var(--border-color)]" id="fonctionnement">
       {/* PART 1: Comment ça marche */}
-      <div className="bg-[var(--bg-app)] py-20 lg:py-28 relative overflow-hidden">
+      <div ref={part1Ref} className="bg-[var(--bg-app)] py-20 lg:py-28 relative overflow-hidden">
         <div className="max-w-[1200px] mx-auto px-6">
           {/* Top Centered Header */}
-          <div className="flex flex-col items-center text-center">
+          <div className="reveal-item flex flex-col items-center text-center">
             <h2 className="text-3xl sm:text-4xl lg:text-[44px] font-bold tracking-tight text-[var(--text-main)] leading-tight">
               {t('home.howItWorks.title')}
             </h2>
@@ -29,16 +32,20 @@ export const HowItWorks: React.FC = () => {
 
           {/* Three Steps with Connecting Line */}
           <div className="mt-16 relative">
-            {/* Dotted connecting line behind numbered circles */}
-            <div className="hidden md:block absolute top-5 left-[16.666%] right-[16.666%] h-0.5 border-t-2 border-dashed border-[#D5D8E4] dark:border-slate-700 z-0 pointer-events-none" />
+            {/* Dotted connecting line drawing from left to right */}
+            <div className="hidden md:block absolute top-5 left-[16.666%] right-[16.666%] h-2 z-0 pointer-events-none overflow-hidden">
+              <svg className="w-full h-2" preserveAspectRatio="none" viewBox="0 0 100 2">
+                <line x1="0" y1="1" x2="100" y2="1" stroke="currentColor" strokeWidth="2" strokeDasharray="4 4" className="text-[var(--border-color)] line-draw" />
+              </svg>
+            </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative z-10">
               {/* Step 1 */}
-              <div className="flex flex-col">
-                <div className="w-10 h-10 rounded-full border-2 border-[var(--primary)] bg-[var(--bg-surface)] text-[var(--primary)] font-semibold text-base flex items-center justify-center mx-auto mb-6 shadow-sm relative z-10">
+              <div className="reveal-item reveal-stagger-1 flex flex-col">
+                <div className="circle-pop-1 w-10 h-10 rounded-full border-2 border-[var(--primary)] bg-[var(--bg-surface)] text-[var(--primary)] font-semibold text-base flex items-center justify-center mx-auto mb-6 shadow-sm relative z-10">
                   {t('home.howItWorks.step1.number')}
                 </div>
-                <div className="bg-[var(--bg-surface)] rounded-2xl border border-[var(--border-color)] p-6 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between flex-1">
+                <div className="card-interactive bg-[var(--bg-surface)] rounded-2xl border border-[var(--border-color)] p-6 shadow-sm flex flex-col justify-between flex-1">
                   <div>
                     <h3 className="text-xl font-semibold text-[var(--text-main)]">
                       {t('home.howItWorks.step1.title')}
@@ -51,7 +58,7 @@ export const HowItWorks: React.FC = () => {
                     <span className="text-xs text-[var(--text-muted)] truncate">
                       {t('home.howItWorks.step1.inputPlaceholder')}
                     </span>
-                    <span className="bg-[var(--primary)] text-white text-xs px-3 py-1.5 rounded-lg font-medium flex-shrink-0 cursor-default shadow-xs">
+                    <span className="bg-[var(--primary-solid)] text-white text-xs px-3 py-1.5 rounded-lg font-medium flex-shrink-0 cursor-default shadow-xs">
                       {t('home.howItWorks.step1.action')}
                     </span>
                   </div>
@@ -59,11 +66,11 @@ export const HowItWorks: React.FC = () => {
               </div>
 
               {/* Step 2 */}
-              <div className="flex flex-col">
-                <div className="w-10 h-10 rounded-full border-2 border-[var(--primary)] bg-[var(--bg-surface)] text-[var(--primary)] font-semibold text-base flex items-center justify-center mx-auto mb-6 shadow-sm relative z-10">
+              <div className="reveal-item reveal-stagger-2 flex flex-col">
+                <div className="circle-pop-2 w-10 h-10 rounded-full border-2 border-[var(--primary)] bg-[var(--bg-surface)] text-[var(--primary)] font-semibold text-base flex items-center justify-center mx-auto mb-6 shadow-sm relative z-10">
                   {t('home.howItWorks.step2.number')}
                 </div>
-                <div className="bg-[var(--bg-surface)] rounded-2xl border border-[var(--border-color)] p-6 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between flex-1">
+                <div className="card-interactive bg-[var(--bg-surface)] rounded-2xl border border-[var(--border-color)] p-6 shadow-sm flex flex-col justify-between flex-1">
                   <div>
                     <h3 className="text-xl font-semibold text-[var(--text-main)]">
                       {t('home.howItWorks.step2.title')}
@@ -90,11 +97,11 @@ export const HowItWorks: React.FC = () => {
               </div>
 
               {/* Step 3 */}
-              <div className="flex flex-col">
-                <div className="w-10 h-10 rounded-full border-2 border-[var(--primary)] bg-[var(--bg-surface)] text-[var(--primary)] font-semibold text-base flex items-center justify-center mx-auto mb-6 shadow-sm relative z-10">
+              <div className="reveal-item reveal-stagger-3 flex flex-col">
+                <div className="circle-pop-3 w-10 h-10 rounded-full border-2 border-[var(--primary)] bg-[var(--bg-surface)] text-[var(--primary)] font-semibold text-base flex items-center justify-center mx-auto mb-6 shadow-sm relative z-10">
                   {t('home.howItWorks.step3.number')}
                 </div>
-                <div className="bg-[var(--bg-surface)] rounded-2xl border border-[var(--border-color)] p-6 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between flex-1">
+                <div className="card-interactive bg-[var(--bg-surface)] rounded-2xl border border-[var(--border-color)] p-6 shadow-sm flex flex-col justify-between flex-1">
                   <div>
                     <h3 className="text-xl font-semibold text-[var(--text-main)]">
                       {t('home.howItWorks.step3.title')}
@@ -117,10 +124,10 @@ export const HowItWorks: React.FC = () => {
       </div>
 
       {/* PART 2: Trois niveaux, jamais de pourcentage (Risk-Level Cards) */}
-      <div className="w-full bg-[var(--bg-surface)] border-t border-[var(--border-color)] py-20 lg:py-24">
+      <div ref={part2Ref} className="w-full bg-[var(--bg-surface)] border-t border-[var(--border-color)] py-20 lg:py-24">
         <div className="max-w-[1200px] mx-auto px-6">
           {/* Centered Header */}
-          <div className="text-center max-w-2xl mx-auto mb-12">
+          <div className="reveal-item text-center max-w-2xl mx-auto mb-12">
             <h3 className="text-2xl sm:text-3xl lg:text-[32px] font-bold text-[var(--text-main)] tracking-tight leading-tight">
               {t('home.riskLevels.title')}
             </h3>
@@ -132,7 +139,7 @@ export const HowItWorks: React.FC = () => {
           {/* Three Level Cards */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {/* Card 1: Risque faible (Green) */}
-            <div className="rounded-2xl border border-[var(--border-color)] p-6 bg-[var(--bg-surface)] flex flex-col justify-between shadow-xs hover:shadow-md transition-shadow">
+            <div className="reveal-item reveal-stagger-1 card-interactive rounded-2xl border border-[var(--border-color)] p-6 bg-[var(--bg-surface)] flex flex-col justify-between shadow-xs">
               <div>
                 <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-sm font-semibold text-[var(--risk-success)] bg-[var(--risk-success-soft)] self-start">
                   <Shield size={16} strokeWidth={2} className="flex-shrink-0" />
@@ -154,7 +161,7 @@ export const HowItWorks: React.FC = () => {
             </div>
 
             {/* Card 2: Vigilance (Amber) */}
-            <div className="rounded-2xl border border-[var(--border-color)] p-6 bg-[var(--bg-surface)] flex flex-col justify-between shadow-xs hover:shadow-md transition-shadow">
+            <div className="reveal-item reveal-stagger-2 card-interactive rounded-2xl border border-[var(--border-color)] p-6 bg-[var(--bg-surface)] flex flex-col justify-between shadow-xs">
               <div>
                 <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-sm font-semibold text-[var(--risk-warning)] bg-[var(--risk-warning-soft)] self-start">
                   <AlertTriangle size={16} strokeWidth={2} className="flex-shrink-0" />
@@ -176,7 +183,7 @@ export const HowItWorks: React.FC = () => {
             </div>
 
             {/* Card 3: Risque élevé (Red) */}
-            <div className="rounded-2xl border border-[var(--border-color)] p-6 bg-[var(--bg-surface)] flex flex-col justify-between shadow-xs hover:shadow-md transition-shadow">
+            <div className="reveal-item reveal-stagger-3 card-interactive rounded-2xl border border-[var(--border-color)] p-6 bg-[var(--bg-surface)] flex flex-col justify-between shadow-xs">
               <div>
                 <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-sm font-semibold text-[var(--risk-danger)] bg-[var(--risk-danger-soft)] self-start">
                   <OctagonAlert size={16} strokeWidth={2} className="flex-shrink-0" />

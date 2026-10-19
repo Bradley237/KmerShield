@@ -132,6 +132,10 @@ h3, .title-3 {
 .nav-hover-link {
   position: relative;
 }
+/* Soft nav link underline hover animation */
+.nav-hover-link {
+  position: relative;
+}
 .nav-hover-link::after {
   content: '';
   position: absolute;
@@ -140,62 +144,284 @@ h3, .title-3 {
   bottom: -4px;
   left: 0;
   background-color: currentColor;
-  transition: width 200ms ease;
+  transition: width 200ms cubic-bezier(0.22, 1, 0.36, 1);
 }
 .nav-hover-link:hover::after {
   width: 100%;
 }
 
-/* Keyframes & Animations */
-@keyframes floatY {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-8px); }
+/* ==========================================================================
+   Motion System: Transitions, Keyframes & Reveal
+   Easing: cubic-bezier(0.22, 1, 0.36, 1)
+   ========================================================================== */
+
+/* Page Load & Hero Entrance Keyframes */
+@keyframes fadeInHeader {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
-@keyframes fadeInUp {
-  0% { opacity: 0; transform: translateY(8px); }
-  100% { opacity: 1; transform: translateY(0); }
+@keyframes heroEnterItem {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-@keyframes pulseSubtle {
-  0%, 100% { opacity: 1; transform: scale(1); }
-  50% { opacity: 0.35; transform: scale(0.85); }
+@keyframes chatBubbleEnter {
+  from {
+    opacity: 0;
+    transform: translateX(16px) rotate(-2deg);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) rotate(-2deg);
+  }
 }
 
-.animate-float {
-  animation: floatY 4s ease-in-out infinite;
+@keyframes sweepMark {
+  from {
+    background-size: 0% 100%;
+  }
+  to {
+    background-size: 100% 100%;
+  }
 }
 
-.animate-fade1 {
-  animation: fadeInUp 400ms cubic-bezier(0.16, 1, 0.3, 1) 100ms both;
+@keyframes analysisCardRise {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.animate-fade2 {
-  animation: fadeInUp 400ms cubic-bezier(0.16, 1, 0.3, 1) 220ms both;
+@keyframes segmentFill {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
 }
 
-.animate-fade3 {
-  animation: fadeInUp 400ms cubic-bezier(0.16, 1, 0.3, 1) 340ms both;
+@keyframes chipPopAndFloat {
+  0% {
+    opacity: 0;
+    transform: scale(0.92) translateY(0px);
+  }
+  15% {
+    opacity: 1;
+    transform: scale(1) translateY(0px);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1) translateY(-6px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0px);
+  }
 }
 
-.animate-pulse-dot {
-  animation: pulseSubtle 2s infinite ease-in-out;
+@keyframes breatheGlow {
+  0%, 100% {
+    opacity: 0.06;
+  }
+  50% {
+    opacity: 0.10;
+  }
 }
 
-/* Scroll reveal utility (used by useReveal hook) */
-.reveal-init {
+@keyframes drawDottedLine {
+  from {
+    stroke-dashoffset: 100;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes popCircle {
+  0% {
+    opacity: 0;
+    transform: scale(0.85);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes formFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Header entrance */
+.animate-header-fade {
+  animation: fadeInHeader 200ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+/* Background subtle breathing glow */
+.animate-glow-breathe {
+  animation: breatheGlow 12s ease-in-out infinite;
+}
+
+/* Hero left column staggered sequence */
+.hero-enter-pill {
+  animation: heroEnterItem 500ms cubic-bezier(0.22, 1, 0.36, 1) 0ms both;
+}
+.hero-enter-headline {
+  animation: heroEnterItem 500ms cubic-bezier(0.22, 1, 0.36, 1) 70ms both;
+}
+.hero-enter-subhead {
+  animation: heroEnterItem 500ms cubic-bezier(0.22, 1, 0.36, 1) 140ms both;
+}
+.hero-enter-buttons {
+  animation: heroEnterItem 500ms cubic-bezier(0.22, 1, 0.36, 1) 210ms both;
+}
+.hero-enter-reassurance {
+  animation: heroEnterItem 500ms cubic-bezier(0.22, 1, 0.36, 1) 280ms both;
+}
+
+/* Hero right column composition sequence */
+.animate-chat-bubble {
+  animation: chatBubbleEnter 600ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.animate-sweep-1 {
+  background: linear-gradient(var(--risk-danger-soft), var(--risk-danger-soft)) no-repeat left center;
+  background-size: 100% 100%;
+  animation: sweepMark 400ms cubic-bezier(0.22, 1, 0.36, 1) 350ms both;
+}
+
+.animate-sweep-2 {
+  background: linear-gradient(var(--risk-danger-soft), var(--risk-danger-soft)) no-repeat left center;
+  background-size: 100% 100%;
+  animation: sweepMark 400ms cubic-bezier(0.22, 1, 0.36, 1) 750ms both;
+}
+
+.animate-analysis-card {
+  animation: analysisCardRise 600ms cubic-bezier(0.22, 1, 0.36, 1) 300ms both;
+}
+
+.animate-reason-1 {
+  animation: heroEnterItem 450ms cubic-bezier(0.22, 1, 0.36, 1) 500ms both;
+}
+.animate-reason-2 {
+  animation: heroEnterItem 450ms cubic-bezier(0.22, 1, 0.36, 1) 620ms both;
+}
+.animate-reason-3 {
+  animation: heroEnterItem 450ms cubic-bezier(0.22, 1, 0.36, 1) 740ms both;
+}
+
+.animate-segment-fill {
+  transform-origin: left;
+  animation: segmentFill 500ms cubic-bezier(0.22, 1, 0.36, 1) 850ms both;
+}
+
+.animate-chip-interactive {
+  animation: chipPopAndFloat 4s cubic-bezier(0.22, 1, 0.36, 1) 950ms infinite;
+}
+
+/* Scroll reveal utilities (used across all sections) */
+.reveal-item {
   opacity: 0;
-  transform: translateY(8px);
-  transition: opacity 450ms cubic-bezier(0.16, 1, 0.3, 1), transform 450ms cubic-bezier(0.16, 1, 0.3, 1);
+  transform: translateY(16px);
+  transition: opacity 500ms cubic-bezier(0.22, 1, 0.36, 1), transform 500ms cubic-bezier(0.22, 1, 0.36, 1);
   will-change: opacity, transform;
 }
 
-.reveal-visible {
+.reveal-visible .reveal-item,
+.reveal-item.reveal-visible {
   opacity: 1;
   transform: translateY(0);
 }
 
-/* Prefers Reduced Motion */
+.reveal-stagger-1 { transition-delay: 80ms; }
+.reveal-stagger-2 { transition-delay: 160ms; }
+.reveal-stagger-3 { transition-delay: 240ms; }
+.reveal-stagger-4 { transition-delay: 320ms; }
+.reveal-stagger-5 { transition-delay: 400ms; }
+
+/* Interactive Hover & Press Utilities */
+.card-interactive {
+  transition: transform 300ms cubic-bezier(0.22, 1, 0.36, 1),
+              box-shadow 300ms cubic-bezier(0.22, 1, 0.36, 1),
+              border-color 300ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+.card-interactive:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  border-color: color-mix(in srgb, var(--primary) 30%, transparent);
+}
+
+.btn-motion {
+  transition: transform 200ms cubic-bezier(0.22, 1, 0.36, 1),
+              box-shadow 200ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+.btn-motion:hover {
+  transform: translateY(-1px);
+}
+.btn-motion:active {
+  transform: scale(0.98);
+}
+
+/* HowItWorks Part 1 dotted line animation */
+.reveal-visible .line-draw {
+  stroke-dashoffset: 0;
+  transition: stroke-dashoffset 800ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+.line-draw {
+  stroke-dasharray: 4 4;
+  stroke-dashoffset: 100;
+}
+
+/* HowItWorks numbered circles pop */
+.reveal-visible .circle-pop-1 {
+  animation: popCircle 400ms cubic-bezier(0.22, 1, 0.36, 1) 200ms both;
+}
+.reveal-visible .circle-pop-2 {
+  animation: popCircle 400ms cubic-bezier(0.22, 1, 0.36, 1) 400ms both;
+}
+.reveal-visible .circle-pop-3 {
+  animation: popCircle 400ms cubic-bezier(0.22, 1, 0.36, 1) 600ms both;
+}
+
+/* Auth Page Entrance */
+.auth-form-enter {
+  animation: formFadeIn 250ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.auth-panel-card-enter {
+  animation: analysisCardRise 600ms cubic-bezier(0.22, 1, 0.36, 1) 150ms both;
+}
+
+/* Theme toggle transition only when active */
+.theme-transition,
+.theme-transition *,
+.theme-transition *::before,
+.theme-transition *::after {
+  transition: background-color 200ms cubic-bezier(0.22, 1, 0.36, 1),
+              color 200ms cubic-bezier(0.22, 1, 0.36, 1),
+              border-color 200ms cubic-bezier(0.22, 1, 0.36, 1) !important;
+}
+
+/* Prefers Reduced Motion: Disable transforms, keep simple opacity fades */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: 0.01ms !important;
@@ -203,16 +429,37 @@ h3, .title-3 {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
-  .reveal-init {
+  .reveal-item {
     opacity: 1 !important;
     transform: none !important;
-    transition: none !important;
+    transition: opacity 200ms ease !important;
   }
-  .animate-float,
-  .animate-fade1,
-  .animate-fade2,
-  .animate-fade3,
-  .animate-pulse-dot {
+  .animate-glow-breathe,
+  .animate-chip-interactive,
+  .animate-segment-fill,
+  .animate-chat-bubble,
+  .animate-analysis-card,
+  .hero-enter-pill,
+  .hero-enter-headline,
+  .hero-enter-subhead,
+  .hero-enter-buttons,
+  .hero-enter-reassurance,
+  .animate-sweep-1,
+  .animate-sweep-2,
+  .animate-reason-1,
+  .animate-reason-2,
+  .animate-reason-3,
+  .auth-form-enter,
+  .auth-panel-card-enter,
+  .circle-pop-1,
+  .circle-pop-2,
+  .circle-pop-3 {
     animation: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+  .line-draw {
+    stroke-dashoffset: 0 !important;
+    transition: none !important;
   }
 }

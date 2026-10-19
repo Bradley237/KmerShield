@@ -8,15 +8,17 @@ import {
   HelpCircle,
   ArrowRight,
 } from 'lucide-react'
+import { useReveal } from '../../hooks/useReveal'
 
 export const Problem: React.FC = () => {
   const { t } = useTranslation()
+  const revealRef = useReveal()
 
   return (
-    <section className="w-full bg-[var(--bg-app)] border-t border-[var(--border-color)] py-20 lg:py-28 relative overflow-hidden">
+    <section ref={revealRef} className="w-full bg-[var(--bg-app)] border-t border-[var(--border-color)] py-20 lg:py-28 relative overflow-hidden">
       <div className="max-w-[1200px] mx-auto px-6 relative z-10">
         {/* 1. Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="reveal-item text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl sm:text-4xl lg:text-[44px] font-bold text-[var(--text-main)] tracking-tight leading-[1.12] mb-5">
             {t('home.problem.title')}
           </h2>
@@ -28,7 +30,7 @@ export const Problem: React.FC = () => {
         {/* 2. Three Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* CARD 01 */}
-          <div className="animate-fade1 card-spring bg-[var(--bg-surface)] rounded-2xl border border-[var(--border-color)] p-7 flex flex-col justify-between shadow-[0_4px_20px_rgba(20,21,26,0.03)] hover:-translate-y-1 hover:shadow-xl hover:border-[#E0E4FC] dark:hover:border-indigo-900/60 group transition-all duration-300">
+          <div className="reveal-item reveal-stagger-1 card-interactive bg-[var(--bg-surface)] rounded-2xl border border-[var(--border-color)] p-7 flex flex-col justify-between shadow-[0_4px_20px_rgba(20,21,26,0.03)] group">
             <div>
               {/* Illustration: SMS */}
               <div className="h-[180px] bg-gradient-to-r from-indigo-50/50 to-[#F8F9FD] dark:from-indigo-950/20 dark:to-slate-900/40 border border-indigo-100/80 dark:border-indigo-900/40 rounded-xl p-4 flex flex-col justify-center items-center mb-6 relative overflow-hidden">
@@ -78,7 +80,7 @@ export const Problem: React.FC = () => {
           </div>
 
           {/* CARD 02 */}
-          <div className="animate-fade2 card-spring bg-[var(--bg-surface)] rounded-2xl border border-[var(--border-color)] p-7 flex flex-col justify-between shadow-[0_4px_20px_rgba(20,21,26,0.03)] hover:-translate-y-1 hover:shadow-xl hover:border-[#E0E4FC] dark:hover:border-indigo-900/60 group transition-all duration-300">
+          <div className="reveal-item reveal-stagger-2 card-interactive bg-[var(--bg-surface)] rounded-2xl border border-[var(--border-color)] p-7 flex flex-col justify-between shadow-[0_4px_20px_rgba(20,21,26,0.03)] group">
             <div>
               {/* Illustration: Urgent Chat */}
               <div className="h-[180px] bg-gradient-to-r from-indigo-50/50 to-[#F8F9FD] dark:from-indigo-950/20 dark:to-slate-900/40 border border-indigo-100/80 dark:border-indigo-900/40 rounded-xl p-3 flex flex-col justify-center items-center gap-2 mb-6 relative overflow-hidden">
@@ -130,7 +132,7 @@ export const Problem: React.FC = () => {
           </div>
 
           {/* CARD 03 */}
-          <div className="animate-fade3 card-spring bg-[var(--bg-surface)] rounded-2xl border border-[var(--border-color)] p-7 flex flex-col justify-between shadow-[0_4px_20px_rgba(20,21,26,0.03)] hover:-translate-y-1 hover:shadow-xl hover:border-[#E0E4FC] dark:hover:border-indigo-900/60 group transition-all duration-300">
+          <div className="reveal-item reveal-stagger-3 card-interactive bg-[var(--bg-surface)] rounded-2xl border border-[var(--border-color)] p-7 flex flex-col justify-between shadow-[0_4px_20px_rgba(20,21,26,0.03)] group">
             <div>
               {/* Illustration: Receipt Skeleton */}
               <div className="h-[180px] bg-gradient-to-r from-indigo-50/50 to-[#F8F9FD] dark:from-indigo-950/20 dark:to-slate-900/40 border border-indigo-100/80 dark:border-indigo-900/40 rounded-xl p-4 flex items-center justify-center mb-6 relative overflow-hidden">
@@ -176,7 +178,7 @@ export const Problem: React.FC = () => {
         </div>
 
         {/* 3. Closing Banner with elegant gradient divider lines */}
-        <div className="flex items-center justify-center gap-6 mt-16 max-w-[840px] mx-auto">
+        <div className="reveal-item reveal-stagger-4 flex items-center justify-center gap-6 mt-16 max-w-[840px] mx-auto">
           <div className="flex-1 h-px bg-gradient-to-r from-transparent via-[var(--border-color)] to-[var(--border-color)]" />
           <div className="text-center px-4">
             <p className="text-[15px] sm:text-base text-[var(--text-main)] font-medium">
@@ -190,7 +192,7 @@ export const Problem: React.FC = () => {
               <ArrowRight
                 size={16}
                 strokeWidth={2}
-                className="transition-transform group-hover:translate-x-1"
+                className="transition-transform group-hover:translate-x-[3px]"
               />
             </a>
           </div>

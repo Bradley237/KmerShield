@@ -25,21 +25,21 @@ export const Hero: React.FC = () => {
           {/* LEFT COLUMN (5 cols) */}
           <div className="lg:col-span-5 flex flex-col items-start z-10">
             {/* Hero Headline */}
-            <h1 className="text-5xl lg:text-[64px] font-bold tracking-tight text-[var(--text-main)] leading-[1.08] mb-6">
+            <h1 className="hero-enter-headline text-5xl lg:text-[64px] font-bold tracking-tight text-[var(--text-main)] leading-[1.08] mb-6">
               {t('home.hero.headlinePrefix')}
               <span className="text-[var(--primary)]">{t('home.hero.headlineHighlight')}</span>
             </h1>
 
             {/* Hero Subtitle */}
-            <p className="text-lg lg:text-[20px] text-[var(--text-muted)] leading-relaxed max-w-[520px] mb-8 font-normal">
+            <p className="hero-enter-subhead text-lg lg:text-[20px] text-[var(--text-muted)] leading-relaxed max-w-[520px] mb-8 font-normal">
               {t('home.hero.subtitle')}
             </p>
 
             {/* Buttons Row */}
-            <div className="flex flex-col sm:flex-row items-center gap-5 mb-10 w-full sm:w-auto">
+            <div className="hero-enter-buttons flex flex-col sm:flex-row items-center gap-5 mb-10 w-full sm:w-auto">
               <Link
                 to="/inscription"
-                className="h-[52px] px-8 rounded-lg bg-[var(--primary-solid)] hover:bg-[var(--primary-solid-hover)] active:bg-[var(--primary-solid-active)] text-[var(--on-primary-solid)] font-medium text-base shadow-sm inline-flex items-center justify-center transition w-full sm:w-auto shrink-0 select-none active:scale-[0.98]"
+                className="btn-motion h-[52px] px-8 rounded-lg bg-[var(--primary-solid)] hover:bg-[var(--primary-solid-hover)] active:bg-[var(--primary-solid-active)] text-[var(--on-primary-solid)] font-medium text-base shadow-sm inline-flex items-center justify-center transition w-full sm:w-auto shrink-0 select-none"
               >
                 {t('home.hero.ctaPrimary')}
               </Link>
@@ -51,13 +51,13 @@ export const Hero: React.FC = () => {
                 <ArrowRight
                   size={16}
                   strokeWidth={2}
-                  className="text-[var(--text-muted)] group-hover:text-[var(--primary)] group-hover:translate-x-1 transition-all"
+                  className="text-[var(--text-muted)] group-hover:text-[var(--primary)] group-hover:translate-x-[3px] transition-transform"
                 />
               </a>
             </div>
 
             {/* Reassurance Row */}
-            <div className="w-full pt-6 border-t border-[var(--border-color)] grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <div className="hero-enter-reassurance w-full pt-6 border-t border-[var(--border-color)] grid grid-cols-1 sm:grid-cols-3 gap-4">
               <div className="flex items-center gap-2.5">
                 <Link2Off size={16} strokeWidth={1.5} className="text-[var(--text-muted)] flex-shrink-0" />
                 <span className="text-xs font-medium text-[var(--text-muted)] leading-tight">
@@ -81,8 +81,8 @@ export const Hero: React.FC = () => {
 
           {/* RIGHT COLUMN (7 cols, Layered Narrative Visual) */}
           <div className="lg:col-span-7 relative flex flex-col items-center justify-center">
-            {/* Soft Indigo Glow centered behind card */}
-            <div className="absolute -inset-4 bg-indigo-500/8 dark:bg-indigo-500/10 blur-3xl rounded-full pointer-events-none transform -translate-y-4" />
+            {/* Soft Indigo Glow with subtle breathing animation */}
+            <div className="absolute -inset-4 bg-indigo-500/8 dark:bg-indigo-500/10 blur-3xl rounded-full pointer-events-none transform -translate-y-4 animate-glow-breathe" />
 
             {/* Subtle Context Pill */}
             <div className="self-end mb-2.5 mr-2">
@@ -93,7 +93,7 @@ export const Hero: React.FC = () => {
 
             <div className="relative w-full max-w-[540px]">
               {/* Layer 1: WhatsApp-style Incoming Message (Back Layer, slight rotation -2deg) */}
-              <div className="relative -rotate-2 -mb-8 ml-4 mr-8 p-4 bg-[var(--bg-surface)]/95 backdrop-blur-sm rounded-2xl rounded-bl-sm border border-[var(--border-color)] shadow-md z-0 transition-transform duration-300 hover:rotate-0">
+              <div className="animate-chat-bubble relative -rotate-2 -mb-8 ml-4 mr-8 p-4 bg-[var(--bg-surface)]/95 backdrop-blur-sm rounded-2xl rounded-bl-sm border border-[var(--border-color)] shadow-md z-0 transition-transform duration-300 hover:rotate-0">
                 <div className="flex items-center justify-between pb-2 border-b border-[var(--border-color)]/50 mb-2">
                   <div className="flex items-center gap-2">
                     <div className="w-5 h-5 rounded-full bg-emerald-500 text-white flex items-center justify-center text-[10px] font-bold">
@@ -109,12 +109,12 @@ export const Hero: React.FC = () => {
                 </div>
                 <p className="text-xs sm:text-[13px] text-[var(--text-muted)] leading-relaxed">
                   {t('home.hero.bubble.greeting')}
-                  <span className="mark-highlight-danger font-semibold text-[var(--text-main)] inline-flex items-center gap-1 mx-0.5">
+                  <span className="mark-highlight-danger animate-sweep-1 font-semibold text-[var(--text-main)] inline-flex items-center gap-1 mx-0.5">
                     <span>{t('home.hero.bubble.alert1')}</span>
                     <span className="inline-flex items-center justify-center w-3.5 h-3.5 rounded-full bg-[var(--risk-danger)] text-white text-[9px] font-bold leading-none shrink-0" aria-label="Signal 1">1</span>
                   </span>
                   {t('home.hero.bubble.middle')}
-                  <span className="mark-highlight-danger font-semibold text-[var(--text-main)] inline-flex items-center gap-1 mx-0.5">
+                  <span className="mark-highlight-danger animate-sweep-2 font-semibold text-[var(--text-main)] inline-flex items-center gap-1 mx-0.5">
                     <span>{t('home.hero.bubble.alert2')}</span>
                     <span className="inline-flex items-center justify-center w-3.5 h-3.5 rounded-full bg-[var(--risk-danger)] text-white text-[9px] font-bold leading-none shrink-0" aria-label="Signal 2">2</span>
                   </span>
@@ -127,7 +127,7 @@ export const Hero: React.FC = () => {
               </div>
 
               {/* Layer 2: Main Evaluation Card (Front layer) */}
-              <div className="relative z-10 bg-[var(--bg-surface)] rounded-2xl p-7 sm:p-8 border border-[var(--border-color)] shadow-[0_20px_50px_rgba(20,21,26,0.06),0_1px_3px_rgba(20,21,26,0.04)]">
+              <div className="animate-analysis-card relative z-10 bg-[var(--bg-surface)] rounded-2xl p-7 sm:p-8 border border-[var(--border-color)] shadow-[0_20px_50px_rgba(20,21,26,0.06),0_1px_3px_rgba(20,21,26,0.04)]">
                 {/* Card Header */}
                 <div className="flex items-center justify-between gap-4 pb-5 border-b border-[var(--border-color)]/60">
                   <div className="flex items-center gap-2.5">
@@ -155,17 +155,17 @@ export const Hero: React.FC = () => {
                       {t('home.hero.card.levelHigh')}
                     </span>
                   </div>
-                  <div className="grid grid-cols-3 gap-2">
+                  <div className="grid grid-cols-3 gap-2 overflow-hidden">
                     <div className="h-2 rounded-full bg-[var(--bg-surface-secondary)]" />
                     <div className="h-2 rounded-full bg-[var(--bg-surface-secondary)]" />
-                    <div className="h-2 rounded-full bg-[var(--risk-danger)] shadow-xs" />
+                    <div className="h-2 rounded-full bg-[var(--risk-danger)] shadow-xs animate-segment-fill" />
                   </div>
                 </div>
 
                 {/* Breakdown of Reasons (Staggered Animation) */}
                 <div className="space-y-3">
                   {/* Reason 1 */}
-                  <div className="animate-fade1 flex items-start gap-3 p-3 rounded-xl bg-[var(--bg-app)] border border-[var(--border-color)]">
+                  <div className="animate-reason-1 flex items-start gap-3 p-3 rounded-xl bg-[var(--bg-app)] border border-[var(--border-color)]">
                     <div className="w-5 h-5 rounded-full bg-[var(--risk-danger-soft)] text-[var(--risk-danger)] flex items-center justify-center flex-shrink-0 mt-0.5 text-xs font-bold">
                       1
                     </div>
@@ -180,7 +180,7 @@ export const Hero: React.FC = () => {
                   </div>
 
                   {/* Reason 2 */}
-                  <div className="animate-fade2 flex items-start gap-3 p-3 rounded-xl bg-[var(--bg-app)] border border-[var(--border-color)]">
+                  <div className="animate-reason-2 flex items-start gap-3 p-3 rounded-xl bg-[var(--bg-app)] border border-[var(--border-color)]">
                     <div className="w-5 h-5 rounded-full bg-[var(--risk-danger-soft)] text-[var(--risk-danger)] flex items-center justify-center flex-shrink-0 mt-0.5 text-xs font-bold">
                       2
                     </div>
@@ -195,7 +195,7 @@ export const Hero: React.FC = () => {
                   </div>
 
                   {/* Reason 3 */}
-                  <div className="animate-fade3 flex items-start gap-3 p-3 rounded-xl bg-[var(--bg-app)] border border-[var(--border-color)]">
+                  <div className="animate-reason-3 flex items-start gap-3 p-3 rounded-xl bg-[var(--bg-app)] border border-[var(--border-color)]">
                     <div className="w-5 h-5 rounded-full bg-[var(--risk-danger-soft)] text-[var(--risk-danger)] flex items-center justify-center flex-shrink-0 mt-0.5 text-xs font-bold">
                       3
                     </div>
@@ -222,7 +222,7 @@ export const Hero: React.FC = () => {
               </div>
 
               {/* Layer 3: Floating Guarantee Chip (overlapping card edge) */}
-              <div className="absolute -top-3.5 right-6 z-20 animate-float bg-[var(--bg-surface)] border border-[var(--border-color)] px-3.5 py-1.5 rounded-full shadow-lg flex items-center gap-2">
+              <div className="absolute -top-3.5 right-6 z-20 animate-chip-interactive bg-[var(--bg-surface)] border border-[var(--border-color)] px-3.5 py-1.5 rounded-full shadow-lg flex items-center gap-2">
                 <div className="w-4 h-4 rounded-full bg-[var(--primary-soft)] text-[var(--primary)] flex items-center justify-center">
                   <Check size={12} strokeWidth={2.5} />
                 </div>

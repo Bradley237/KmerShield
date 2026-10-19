@@ -31,7 +31,17 @@ export function useTheme() {
     }
   }, [])
 
+  const triggerThemeTransition = () => {
+    if (typeof document === 'undefined') return
+    const root = document.documentElement
+    root.classList.add('theme-transition')
+    window.setTimeout(() => {
+      root.classList.remove('theme-transition')
+    }, 200)
+  }
+
   const setTheme = useCallback((newTheme: ThemeMode) => {
+    triggerThemeTransition()
     setThemeState(newTheme)
     try {
       localStorage.setItem(STORAGE_KEY, newTheme)
