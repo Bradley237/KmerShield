@@ -134,6 +134,8 @@ export const ResetPassword: React.FC = () => {
             type="password"
             required
             autoComplete="new-password"
+            spellCheck={false}
+            autoCorrect="off"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             placeholder={t('auth.resetPassword.passwordPlaceholder')}
@@ -155,6 +157,8 @@ export const ResetPassword: React.FC = () => {
             type="password"
             required
             autoComplete="new-password"
+            spellCheck={false}
+            autoCorrect="off"
             value={confirmPassword}
             onChange={(e) => setConfirmPassword(e.target.value)}
             placeholder={t('auth.resetPassword.confirmPasswordPlaceholder')}

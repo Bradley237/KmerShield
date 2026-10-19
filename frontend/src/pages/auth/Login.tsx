@@ -71,6 +71,8 @@ export const Login: React.FC = () => {
             type="email"
             required
             autoComplete="email"
+            spellCheck={false}
+            autoCorrect="off"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder={t('auth.login.emailPlaceholder')}
@@ -101,6 +103,8 @@ export const Login: React.FC = () => {
             type="password"
             required
             autoComplete="current-password"
+            spellCheck={false}
+            autoCorrect="off"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             placeholder={t('auth.login.passwordPlaceholder')}

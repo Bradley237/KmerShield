@@ -45,6 +45,8 @@ export const Contact: React.FC = () => {
                 id="contact-email"
                 type="email"
                 required
+                spellCheck={false}
+                autoCorrect="off"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="vous@exemple.com"
@@ -79,8 +81,8 @@ export const Contact: React.FC = () => {
 
             <button
               type="submit"
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-semibold transition-all hover:opacity-95 shadow-sm cursor-pointer min-h-[44px]"
-              style={{ backgroundColor: 'var(--primary)', color: 'var(--on-primary)' }}
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-semibold transition-all hover:opacity-95 shadow-sm cursor-pointer min-h-[44px] active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary-solid)] focus-visible:ring-offset-2"
+              style={{ backgroundColor: 'var(--primary-solid)', color: 'var(--on-primary-solid)' }}
             >
               <Send size={16} strokeWidth={1.5} />
               Envoyer le message

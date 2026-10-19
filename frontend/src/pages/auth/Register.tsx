@@ -77,6 +77,8 @@ export const Register: React.FC = () => {
             type="text"
             required
             autoComplete="name"
+            spellCheck={false}
+            autoCorrect="off"
             value={name}
             onChange={(e) => setName(e.target.value)}
             placeholder={t('auth.register.namePlaceholder')}
@@ -98,6 +100,8 @@ export const Register: React.FC = () => {
             type="email"
             required
             autoComplete="email"
+            spellCheck={false}
+            autoCorrect="off"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder={t('auth.register.emailPlaceholder')}
@@ -119,6 +123,8 @@ export const Register: React.FC = () => {
             type="password"
             required
             autoComplete="new-password"
+            spellCheck={false}
+            autoCorrect="off"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             placeholder={t('auth.register.passwordPlaceholder')}

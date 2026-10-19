@@ -48,8 +48,9 @@ export const Problem: React.FC = () => {
                   </div>
                   <p className="text-xs text-[var(--text-main)] leading-relaxed">
                     {t('home.problem.card1.mockPrefix')}
-                    <span className="wavy-danger font-medium text-[var(--text-main)]">
-                      {t('home.problem.card1.mockLink')}
+                    <span className="mark-highlight-danger font-medium text-[var(--text-main)] inline-flex items-center gap-1 mx-0.5">
+                      <span>{t('home.problem.card1.mockLink')}</span>
+                      <span className="inline-flex items-center justify-center w-3.5 h-3.5 rounded-full bg-[var(--risk-danger)] text-white text-[9px] font-bold leading-none shrink-0" aria-label="Lien suspect">!</span>
                     </span>
                   </p>
                 </div>

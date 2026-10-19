@@ -74,6 +74,8 @@ export const ForgotPassword: React.FC = () => {
               type="email"
               required
               autoComplete="email"
+              spellCheck={false}
+              autoCorrect="off"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder={t('auth.forgotPassword.emailPlaceholder')}

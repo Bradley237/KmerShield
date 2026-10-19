@@ -8,8 +8,6 @@ import {
   Info,
   Link2Off,
   AlertTriangle,
-  Clock,
-  Ban,
   Check,
   CheckCheck,
 } from 'lucide-react'
@@ -111,12 +109,14 @@ export const Hero: React.FC = () => {
                 </div>
                 <p className="text-xs sm:text-[13px] text-[var(--text-muted)] leading-relaxed">
                   {t('home.hero.bubble.greeting')}
-                  <span className="wavy-danger font-semibold text-[var(--text-main)]">
-                    {t('home.hero.bubble.alert1')}
+                  <span className="mark-highlight-danger font-semibold text-[var(--text-main)] inline-flex items-center gap-1 mx-0.5">
+                    <span>{t('home.hero.bubble.alert1')}</span>
+                    <span className="inline-flex items-center justify-center w-3.5 h-3.5 rounded-full bg-[var(--risk-danger)] text-white text-[9px] font-bold leading-none shrink-0" aria-label="Signal 1">1</span>
                   </span>
                   {t('home.hero.bubble.middle')}
-                  <span className="wavy-danger font-semibold text-[var(--text-main)]">
-                    {t('home.hero.bubble.alert2')}
+                  <span className="mark-highlight-danger font-semibold text-[var(--text-main)] inline-flex items-center gap-1 mx-0.5">
+                    <span>{t('home.hero.bubble.alert2')}</span>
+                    <span className="inline-flex items-center justify-center w-3.5 h-3.5 rounded-full bg-[var(--risk-danger)] text-white text-[9px] font-bold leading-none shrink-0" aria-label="Signal 2">2</span>
                   </span>
                   {t('home.hero.bubble.period')}
                 </p>
@@ -166,8 +166,8 @@ export const Hero: React.FC = () => {
                 <div className="space-y-3">
                   {/* Reason 1 */}
                   <div className="animate-fade1 flex items-start gap-3 p-3 rounded-xl bg-[var(--bg-app)] border border-[var(--border-color)]">
-                    <div className="w-5 h-5 rounded-full bg-[var(--risk-danger-soft)] text-[var(--risk-danger)] flex items-center justify-center flex-shrink-0 mt-0.5">
-                      <AlertTriangle size={12} strokeWidth={2.5} />
+                    <div className="w-5 h-5 rounded-full bg-[var(--risk-danger-soft)] text-[var(--risk-danger)] flex items-center justify-center flex-shrink-0 mt-0.5 text-xs font-bold">
+                      1
                     </div>
                     <div>
                       <p className="text-xs sm:text-sm font-semibold text-[var(--text-main)] leading-snug">
@@ -181,8 +181,8 @@ export const Hero: React.FC = () => {
 
                   {/* Reason 2 */}
                   <div className="animate-fade2 flex items-start gap-3 p-3 rounded-xl bg-[var(--bg-app)] border border-[var(--border-color)]">
-                    <div className="w-5 h-5 rounded-full bg-[var(--risk-danger-soft)] text-[var(--risk-danger)] flex items-center justify-center flex-shrink-0 mt-0.5">
-                      <Clock size={12} strokeWidth={2.5} />
+                    <div className="w-5 h-5 rounded-full bg-[var(--risk-danger-soft)] text-[var(--risk-danger)] flex items-center justify-center flex-shrink-0 mt-0.5 text-xs font-bold">
+                      2
                     </div>
                     <div>
                       <p className="text-xs sm:text-sm font-semibold text-[var(--text-main)] leading-snug">
@@ -196,8 +196,8 @@ export const Hero: React.FC = () => {
 
                   {/* Reason 3 */}
                   <div className="animate-fade3 flex items-start gap-3 p-3 rounded-xl bg-[var(--bg-app)] border border-[var(--border-color)]">
-                    <div className="w-5 h-5 rounded-full bg-[var(--risk-danger-soft)] text-[var(--risk-danger)] flex items-center justify-center flex-shrink-0 mt-0.5">
-                      <Ban size={12} strokeWidth={2.5} />
+                    <div className="w-5 h-5 rounded-full bg-[var(--risk-danger-soft)] text-[var(--risk-danger)] flex items-center justify-center flex-shrink-0 mt-0.5 text-xs font-bold">
+                      3
                     </div>
                     <div>
                       <p className="text-xs sm:text-sm font-semibold text-[var(--text-main)] leading-snug">
