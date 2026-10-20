@@ -24,7 +24,7 @@ const META_MAP: Record<string, { fr: MetaConfig; en: MetaConfig }> = {
       description: 'Connectez-vous à KmerShield pour évaluer la sécurité de vos liens et transactions financières.',
     },
     en: {
-      title: 'Sign In — KmerShield',
+      title: 'Sign in — KmerShield',
       description: 'Sign in to KmerShield to evaluate link and transaction safety.',
     },
   },
@@ -34,7 +34,7 @@ const META_MAP: Record<string, { fr: MetaConfig; en: MetaConfig }> = {
       description: 'Rejoignez KmerShield pour analyser vos transactions et bénéficier de conseils civiques.',
     },
     en: {
-      title: 'Create Account — KmerShield',
+      title: 'Create account — KmerShield',
       description: 'Join KmerShield to assess transactions and receive civic security advice.',
     },
   },
@@ -44,7 +44,7 @@ const META_MAP: Record<string, { fr: MetaConfig; en: MetaConfig }> = {
       description: 'Réinitialisez votre mot de passe pour sécuriser votre compte KmerShield.',
     },
     en: {
-      title: 'Forgot Password — KmerShield',
+      title: 'Forgot password — KmerShield',
       description: 'Reset your password to secure your KmerShield account.',
     },
   },
@@ -54,7 +54,7 @@ const META_MAP: Record<string, { fr: MetaConfig; en: MetaConfig }> = {
       description: 'Définissez un mot de passe robuste pour votre compte KmerShield.',
     },
     en: {
-      title: 'New Password — KmerShield',
+      title: 'New password — KmerShield',
       description: 'Set a strong password for your KmerShield account.',
     },
   },
@@ -64,7 +64,7 @@ const META_MAP: Record<string, { fr: MetaConfig; en: MetaConfig }> = {
       description: 'Principes de protection des données et de confidentialité de KmerShield.',
     },
     en: {
-      title: 'Privacy Policy — KmerShield',
+      title: 'Privacy policy — KmerShield',
       description: 'Data protection and privacy principles of KmerShield.',
     },
   },
@@ -74,7 +74,7 @@ const META_MAP: Record<string, { fr: MetaConfig; en: MetaConfig }> = {
       description: "Conditions générales d'utilisation du service civique KmerShield.",
     },
     en: {
-      title: 'Terms of Service — KmerShield',
+      title: 'Terms of service — KmerShield',
       description: 'Terms and conditions for using the KmerShield civic service.',
     },
   },
@@ -84,7 +84,7 @@ const META_MAP: Record<string, { fr: MetaConfig; en: MetaConfig }> = {
       description: "Contactez l'équipe KmerShield pour toute question ou signalement civique.",
     },
     en: {
-      title: 'Contact & Support — KmerShield',
+      title: 'Contact & support — KmerShield',
       description: 'Contact the KmerShield team for inquiries or civic reporting.',
     },
   },
@@ -94,7 +94,7 @@ const META_MAP: Record<string, { fr: MetaConfig; en: MetaConfig }> = {
       description: 'Spécifications et composants visuels de la plateforme KmerShield.',
     },
     en: {
-      title: 'Design System — KmerShield',
+      title: 'Design system — KmerShield',
       description: 'Visual system specifications and components of KmerShield.',
     },
   },
@@ -109,7 +109,7 @@ export function usePageMeta() {
     document.documentElement.lang = lang
 
     const config = META_MAP[location.pathname]?.[lang] || {
-      title: lang === 'en' ? 'Page Not Found — KmerShield' : 'Page introuvable — KmerShield',
+      title: lang === 'en' ? 'Page not found — KmerShield' : 'Page introuvable — KmerShield',
       description:
         lang === 'en'
           ? 'The requested page does not exist.'
