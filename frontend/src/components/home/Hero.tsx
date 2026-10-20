@@ -10,6 +10,7 @@ import {
   AlertTriangle,
   Check,
   CheckCheck,
+  User,
 } from 'lucide-react'
 
 export const Hero: React.FC = () => {
@@ -96,8 +97,8 @@ export const Hero: React.FC = () => {
               <div className="animate-chat-bubble relative -rotate-2 -mb-8 ml-4 mr-8 p-4 bg-[var(--bg-surface)]/95 backdrop-blur-sm rounded-2xl rounded-bl-sm border border-[var(--border-color)] shadow-md z-0 transition-transform duration-300 hover:rotate-0">
                 <div className="flex items-center justify-between pb-2 border-b border-[var(--border-color)]/50 mb-2">
                   <div className="flex items-center gap-2">
-                    <div className="w-5 h-5 rounded-full bg-emerald-500 text-white flex items-center justify-center text-[10px] font-bold">
-                      V
+                    <div className="w-5 h-5 rounded-full bg-[var(--bg-surface-raised)] border border-[var(--border-color)] text-[var(--text-muted)] flex items-center justify-center">
+                      <User size={12} strokeWidth={2} className="text-[var(--text-muted)]" />
                     </div>
                     <span className="text-xs font-medium text-[var(--text-main)]">
                       {t('home.hero.bubble.sender')}
