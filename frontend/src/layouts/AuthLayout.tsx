@@ -5,14 +5,16 @@ import { ArrowLeft, ShieldCheck, Eye, Lock } from 'lucide-react'
 import { Logo } from '../components/layout/Logo'
 import { LanguageSwitch } from '../components/layout/LanguageSwitch'
 import { ThemeToggle } from '../components/layout/ThemeToggle'
+import { usePageMeta } from '../hooks/usePageMeta'
 
 export const AuthLayout: React.FC = () => {
   const { t } = useTranslation()
+  usePageMeta()
 
   return (
     <div className="min-h-screen grid grid-cols-1 md:grid-cols-2" style={{ backgroundColor: 'var(--bg-app)' }}>
       {/* Left Form Container */}
-      <div className="flex flex-col justify-between p-6 sm:p-10 lg:p-12 min-h-screen">
+      <div className="auth-form-enter flex flex-col justify-between p-6 sm:p-10 lg:p-12 min-h-screen">
         {/* Top Controls */}
         <div className="flex items-center justify-between">
           <Logo />
@@ -62,7 +64,7 @@ export const AuthLayout: React.FC = () => {
           </span>
         </div>
 
-        <div className="max-w-md space-y-8 my-auto">
+        <div className="auth-panel-card-enter max-w-md space-y-8 my-auto">
           <div className="space-y-3">
             <h2 className="text-3xl font-bold tracking-tight" style={{ color: 'var(--text-main)' }}>
               {t('auth.sidePanel.title')}

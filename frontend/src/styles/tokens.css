@@ -9,6 +9,7 @@
   --bg-app: #FAFAFC;
   --bg-surface: #FFFFFF;
   --bg-surface-secondary: #F3F4F7;
+  --bg-surface-raised: #FFFFFF;
   --text-main: #14151A;
   --text-muted: #5B6070;
   --text-subtle: #8A8F9E;
@@ -22,13 +23,19 @@
   --primary-active: #3730A3;
   --on-primary: #FFFFFF;
 
+  /* Primary Solid (Always Indigo #4F46E5 in every theme and state) */
+  --primary-solid: #4F46E5;
+  --primary-solid-hover: #4338CA;
+  --primary-solid-active: #3730A3;
+  --on-primary-solid: #FFFFFF;
+
   /* Risk Semantic Colors (STRICT RULE: used ONLY by RiskBadge & RiskIndicator) */
   --risk-success: #15803D;
   --risk-success-soft: #ECFDF5;
   --risk-warning: #B45309;
   --risk-warning-soft: #FFFBEB;
   --risk-danger: #B91C1C;
-  --risk-danger-soft: #FEF2F2;
+  --risk-danger-soft: rgba(185, 28, 28, 0.14);
 
   /* Form & Feedback Error (Strictly separated from risk-danger) */
   --feedback-error: #BE123C;
@@ -97,20 +104,27 @@
    ========================================================================== */
 [data-theme="dark"],
 [data-surface="dark"] {
-  --bg-app: #101116;
-  --bg-surface: #17181F;
-  --bg-surface-secondary: #1F212A;
-  --text-main: #F2F3F7;
-  --text-muted: #A0A4B2;
-  --text-subtle: #747888;
-  --border-color: #2A2C37;
-  --border-subtle: #22242D;
+  --bg-app: #1A1C23;
+  --bg-surface: #22252E;
+  --bg-surface-secondary: #292C37;
+  --bg-surface-raised: #292C37;
+  --text-main: #F1F2F6;
+  --text-muted: #A9AEBD;
+  --text-subtle: #797E8F;
+  --border-color: #353946;
+  --border-subtle: #2D313D;
 
   --primary: #818CF8;
   --primary-hover: #A5B4FC;
-  --primary-soft: rgba(129, 140, 248, 0.15);
+  --primary-soft: rgba(129, 140, 248, 0.12);
   --primary-active: #6366F1;
-  --on-primary: #0E0F14;
+  --on-primary: #FFFFFF;
+
+  /* Primary Solid (Always Indigo #4F46E5 in every theme and state) */
+  --primary-solid: #4F46E5;
+  --primary-solid-hover: #4338CA;
+  --primary-solid-active: #3730A3;
+  --on-primary-solid: #FFFFFF;
 
   /* Risk Semantic Colors */
   --risk-success: #4ADE80;
@@ -118,7 +132,7 @@
   --risk-warning: #FBBF24;
   --risk-warning-soft: rgba(251, 191, 36, 0.12);
   --risk-danger: #F87171;
-  --risk-danger-soft: rgba(248, 113, 113, 0.12);
+  --risk-danger-soft: rgba(248, 113, 113, 0.14);
 
   /* Form & Feedback Error */
   --feedback-error: #FB7185;

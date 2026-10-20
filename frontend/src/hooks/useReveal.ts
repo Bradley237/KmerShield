@@ -1,26 +1,30 @@
 import { useEffect, useRef } from 'react'
 
-export function useReveal<T extends HTMLElement = HTMLDivElement>() {
+export function useReveal<T extends HTMLElement = HTMLElement>() {
   const ref = useRef<T>(null)
 
   useEffect(() => {
     const element = ref.current
     if (!element) return
 
-    // If user prefers reduced motion, show immediately
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-      element.classList.remove('reveal-init')
+    if (
+      typeof IntersectionObserver === 'undefined' ||
+      window.matchMedia?.('(prefers-reduced-motion: reduce)')?.matches
+    ) {
       element.classList.add('reveal-visible')
+      element.querySelectorAll('.reveal-item').forEach((el) => {
+        el.classList.add('reveal-visible')
+      })
       return
     }
-
-    element.classList.add('reveal-init')
 
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             entry.target.classList.add('reveal-visible')
+            const children = entry.target.querySelectorAll('.reveal-item')
+            children.forEach((child) => child.classList.add('reveal-visible'))
             observer.unobserve(entry.target)
           }
         })

@@ -62,8 +62,8 @@ export const ResetPassword: React.FC = () => {
 
         <Link
           to="/mot-de-passe-oublie"
-          className="w-full py-3 rounded-xl font-semibold transition-all hover:opacity-95 shadow-sm min-h-[44px] flex items-center justify-center gap-2"
-          style={{ backgroundColor: 'var(--primary)', color: 'var(--on-primary)' }}
+          className="w-full py-3 rounded-xl font-semibold transition-all hover:opacity-95 shadow-sm min-h-[44px] flex items-center justify-center gap-2 active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary-solid)] focus-visible:ring-offset-2"
+          style={{ backgroundColor: 'var(--primary-solid)', color: 'var(--on-primary-solid)' }}
         >
           {t('auth.resetPassword.requestNewLink')}
         </Link>
@@ -89,8 +89,8 @@ export const ResetPassword: React.FC = () => {
 
         <Link
           to="/connexion"
-          className="w-full py-3 rounded-xl font-semibold transition-all hover:opacity-95 shadow-sm min-h-[44px] flex items-center justify-center gap-2"
-          style={{ backgroundColor: 'var(--primary)', color: 'var(--on-primary)' }}
+          className="w-full py-3 rounded-xl font-semibold transition-all hover:opacity-95 shadow-sm min-h-[44px] flex items-center justify-center gap-2 active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary-solid)] focus-visible:ring-offset-2"
+          style={{ backgroundColor: 'var(--primary-solid)', color: 'var(--on-primary-solid)' }}
         >
           {t('auth.login.submitButton')}
           <ArrowRight size={16} strokeWidth={1.5} />
@@ -134,6 +134,8 @@ export const ResetPassword: React.FC = () => {
             type="password"
             required
             autoComplete="new-password"
+            spellCheck={false}
+            autoCorrect="off"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             placeholder={t('auth.resetPassword.passwordPlaceholder')}
@@ -155,6 +157,8 @@ export const ResetPassword: React.FC = () => {
             type="password"
             required
             autoComplete="new-password"
+            spellCheck={false}
+            autoCorrect="off"
             value={confirmPassword}
             onChange={(e) => setConfirmPassword(e.target.value)}
             placeholder={t('auth.resetPassword.confirmPasswordPlaceholder')}
@@ -170,10 +174,10 @@ export const ResetPassword: React.FC = () => {
         <button
           type="submit"
           disabled={loading}
-          className="w-full py-3 rounded-xl font-semibold transition-all hover:opacity-95 shadow-sm disabled:opacity-50 cursor-pointer min-h-[44px] flex items-center justify-center gap-2 mt-2"
+          className="w-full py-3 rounded-xl font-semibold transition-all hover:opacity-95 shadow-sm disabled:opacity-50 cursor-pointer min-h-[44px] flex items-center justify-center gap-2 mt-2 active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary-solid)] focus-visible:ring-offset-2"
           style={{
-            backgroundColor: 'var(--primary)',
-            color: 'var(--on-primary)',
+            backgroundColor: 'var(--primary-solid)',
+            color: 'var(--on-primary-solid)',
           }}
         >
           {loading ? t('auth.resetPassword.submitting') : t('auth.resetPassword.submitButton')}

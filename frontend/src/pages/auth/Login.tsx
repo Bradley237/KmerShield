@@ -71,6 +71,8 @@ export const Login: React.FC = () => {
             type="email"
             required
             autoComplete="email"
+            spellCheck={false}
+            autoCorrect="off"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder={t('auth.login.emailPlaceholder')}
@@ -101,6 +103,8 @@ export const Login: React.FC = () => {
             type="password"
             required
             autoComplete="current-password"
+            spellCheck={false}
+            autoCorrect="off"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             placeholder={t('auth.login.passwordPlaceholder')}
@@ -116,10 +120,10 @@ export const Login: React.FC = () => {
         <button
           type="submit"
           disabled={loading}
-          className="w-full py-3 rounded-xl font-semibold transition-all hover:opacity-95 shadow-sm disabled:opacity-50 cursor-pointer min-h-[44px] flex items-center justify-center gap-2 mt-2"
+          className="w-full py-3 rounded-xl font-semibold transition-all hover:opacity-95 shadow-sm disabled:opacity-50 cursor-pointer min-h-[44px] flex items-center justify-center gap-2 mt-2 active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary-solid)] focus-visible:ring-offset-2"
           style={{
-            backgroundColor: 'var(--primary)',
-            color: 'var(--on-primary)',
+            backgroundColor: 'var(--primary-solid)',
+            color: 'var(--on-primary-solid)',
           }}
         >
           {loading ? t('auth.login.submitting') : t('auth.login.submitButton')}

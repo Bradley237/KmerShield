@@ -7,7 +7,13 @@ export const Footer: React.FC = () => {
   const { t } = useTranslation()
 
   return (
-    <footer className="w-full border-t border-[var(--border-color)] bg-[var(--bg-app)] py-8 px-6">
+    <footer
+      className="w-full py-8 px-6 transition-colors border-t border-[var(--border-color)] bg-[var(--bg-app)]"
+      style={{
+        backgroundColor: 'var(--bg-app)',
+        borderTop: '1px solid var(--border-color)',
+      }}
+    >
       <div className="max-w-[1200px] mx-auto flex flex-col md:flex-row items-center justify-between gap-6 text-xs text-[var(--text-muted)]">
         {/* Brand & Tagline */}
         <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-3 text-center sm:text-left">
