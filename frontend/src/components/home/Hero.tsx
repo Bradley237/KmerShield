@@ -174,23 +174,29 @@ export const Hero: React.FC = () => {
 
                 {/* Three-segment Risk Level Visual Indicator */}
                 <div className="mt-5 mb-6">
-                  <div className="flex items-center justify-between text-xs font-medium text-[var(--text-muted)] mb-2 px-0.5">
-                    <span>{t('home.hero.card.levelLow')}</span>
-                    <span>{t('home.hero.card.levelMedium')}</span>
-                    <span className="text-[var(--risk-danger)] font-semibold">
-                      {t('home.hero.card.levelHigh')}
-                    </span>
-                  </div>
-                  <div className="grid grid-cols-3 gap-2 overflow-hidden">
-                    <div className="h-2 rounded-full bg-[var(--bg-surface-secondary)]" />
-                    <div className="h-2 rounded-full bg-[var(--bg-surface-secondary)]" />
+                  {/* Three segments of exactly equal width (flex: 1) with an 8px gap */}
+                  <div className="flex gap-2 overflow-hidden">
+                    <div className="flex-1 h-2 rounded-full bg-[var(--bg-surface-secondary)]" />
+                    <div className="flex-1 h-2 rounded-full bg-[var(--bg-surface-secondary)]" />
                     <div
-                      className="h-2 rounded-full animate-segment-fill"
+                      className="flex-1 h-2 rounded-full animate-segment-fill"
                       style={{
                         backgroundColor: 'var(--risk-danger)',
                         boxShadow: '0 0 6px color-mix(in srgb, var(--risk-danger) 25%, transparent)',
                       }}
                     />
+                  </div>
+                  {/* Each label centered under its own segment */}
+                  <div className="flex gap-2 mt-2">
+                    <span className="flex-1 text-center text-xs font-medium text-[var(--text-muted)]">
+                      {t('home.hero.card.levelLow')}
+                    </span>
+                    <span className="flex-1 text-center text-xs font-medium text-[var(--text-muted)]">
+                      {t('home.hero.card.levelMedium')}
+                    </span>
+                    <span className="flex-1 text-center text-xs font-semibold text-[var(--risk-danger)]">
+                      {t('home.hero.card.levelHigh')}
+                    </span>
                   </div>
                 </div>
 
