@@ -137,10 +137,9 @@ export const Header: React.FC = () => {
               </Link>
               <Link
                 to="/inscription"
-                className="relative inline-flex items-center justify-center px-4 py-2 text-sm font-semibold text-[var(--on-primary-solid)] bg-[var(--primary-solid)] hover:bg-[var(--primary-solid-hover)] active:bg-[var(--primary-solid-active)] rounded-lg shadow-sm transition overflow-hidden group"
+                className="btn-motion inline-flex items-center justify-center px-4 py-2 text-sm font-semibold text-white bg-[#4F46E5] hover:bg-[#4338CA] active:bg-[#3730A3] rounded-lg transition-colors cursor-pointer select-none"
               >
-                <span className="relative z-10">{t('nav.signUp')}</span>
-                <div className="absolute inset-x-0 top-0 h-px bg-white/20 pointer-events-none" />
+                {t('nav.signUp')}
               </Link>
             </div>
           )}
@@ -221,7 +220,7 @@ export const Header: React.FC = () => {
                 <Link
                   to="/inscription"
                   onClick={() => setMobileMenuOpen(false)}
-                  className="w-full text-center py-2.5 text-sm font-semibold rounded-lg bg-[var(--primary-solid)] text-[var(--on-primary-solid)] shadow-sm"
+                  className="w-full text-center py-2.5 text-sm font-semibold rounded-lg bg-[#4F46E5] hover:bg-[#4338CA] text-white transition-colors"
                 >
                   {t('nav.signUp')}
                 </Link>
