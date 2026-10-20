@@ -85,8 +85,8 @@ export const Hero: React.FC = () => {
             {/* Soft Indigo Glow with subtle breathing animation */}
             <div className="absolute -inset-4 bg-indigo-500/8 dark:bg-indigo-500/10 blur-3xl rounded-full pointer-events-none transform -translate-y-4 animate-glow-breathe" />
 
-            {/* Subtle Context Pill */}
-            <div className="self-end mb-2.5 mr-2">
+            {/* Subtle Context Pill (top-left of composition, aligned with bubble left edge) */}
+            <div className="w-full max-w-[540px] flex justify-start mb-2.5 pl-4">
               <span className="inline-flex items-center text-[11px] font-medium text-[var(--text-muted)] uppercase tracking-wider bg-[var(--bg-surface)]/80 backdrop-blur-xs px-2.5 py-1 rounded-md border border-[var(--border-color)]">
                 {t('home.hero.examplePill')}
               </span>
