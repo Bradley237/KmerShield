@@ -114,6 +114,12 @@ section[id] {
   scroll-margin-top: 4rem;
 }
 
+/* Always-dark scope footer styling */
+[data-surface="dark"] footer,
+footer[data-surface="dark"] {
+  background-color: var(--bg-surface) !important;
+}
+
 /* Link Resets */
 a {
   color: inherit;
