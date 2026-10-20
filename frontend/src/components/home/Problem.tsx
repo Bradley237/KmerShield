@@ -33,7 +33,7 @@ export const Problem: React.FC = () => {
           <div className="reveal-item reveal-stagger-1 card-interactive bg-[var(--bg-surface)] rounded-2xl border border-[var(--border-color)] p-7 flex flex-col justify-between shadow-[0_4px_20px_rgba(20,21,26,0.03)] group">
             <div>
               {/* Illustration: SMS */}
-              <div className="h-[180px] bg-gradient-to-r from-indigo-50/50 to-[#F8F9FD] dark:from-indigo-950/20 dark:to-slate-900/40 border border-indigo-100/80 dark:border-indigo-900/40 rounded-xl p-4 flex flex-col justify-center items-center mb-6 relative overflow-hidden">
+              <div className="h-[180px] bg-gradient-to-r from-[var(--primary-soft)]/50 to-[var(--bg-surface-secondary)] border border-[var(--border-color)] rounded-xl p-4 flex flex-col justify-center items-center mb-6 relative overflow-hidden">
                 <div className="w-full max-w-[280px] bg-[var(--bg-surface)] rounded-xl border border-[var(--border-color)] p-3.5 shadow-md group-hover:shadow-lg transition-shadow duration-300 relative z-10">
                   <div className="flex items-center justify-between pb-2 mb-2 border-b border-[var(--border-color)]/60">
                     <div className="flex items-center gap-2">
@@ -83,7 +83,7 @@ export const Problem: React.FC = () => {
           <div className="reveal-item reveal-stagger-2 card-interactive bg-[var(--bg-surface)] rounded-2xl border border-[var(--border-color)] p-7 flex flex-col justify-between shadow-[0_4px_20px_rgba(20,21,26,0.03)] group">
             <div>
               {/* Illustration: Urgent Chat */}
-              <div className="h-[180px] bg-gradient-to-r from-indigo-50/50 to-[#F8F9FD] dark:from-indigo-950/20 dark:to-slate-900/40 border border-indigo-100/80 dark:border-indigo-900/40 rounded-xl p-3 flex flex-col justify-center items-center gap-2 mb-6 relative overflow-hidden">
+              <div className="h-[180px] bg-gradient-to-r from-[var(--primary-soft)]/50 to-[var(--bg-surface-secondary)] border border-[var(--border-color)] rounded-xl p-3 flex flex-col justify-center items-center gap-2 mb-6 relative overflow-hidden">
                 <div className="w-full max-w-[270px] bg-[var(--bg-surface)] rounded-xl border border-[var(--border-color)] p-3 shadow-md group-hover:shadow-lg transition-shadow duration-300 relative z-10">
                   <div className="flex items-center justify-between pb-1.5 mb-1.5 border-b border-[var(--border-color)]/60">
                     <div className="flex items-center gap-1.5">
@@ -135,7 +135,7 @@ export const Problem: React.FC = () => {
           <div className="reveal-item reveal-stagger-3 card-interactive bg-[var(--bg-surface)] rounded-2xl border border-[var(--border-color)] p-7 flex flex-col justify-between shadow-[0_4px_20px_rgba(20,21,26,0.03)] group">
             <div>
               {/* Illustration: Receipt Skeleton */}
-              <div className="h-[180px] bg-gradient-to-r from-indigo-50/50 to-[#F8F9FD] dark:from-indigo-950/20 dark:to-slate-900/40 border border-indigo-100/80 dark:border-indigo-900/40 rounded-xl p-4 flex items-center justify-center mb-6 relative overflow-hidden">
+              <div className="h-[180px] bg-gradient-to-r from-[var(--primary-soft)]/50 to-[var(--bg-surface-secondary)] border border-[var(--border-color)] rounded-xl p-4 flex items-center justify-center mb-6 relative overflow-hidden">
                 <div className="w-[210px] bg-[var(--bg-surface)] border border-[var(--border-color)] rounded-xl shadow-md group-hover:shadow-lg transition-shadow duration-300 p-3.5 flex flex-col gap-2.5 relative z-10">
                   <div className="flex items-center justify-between">
                     <span className="inline-flex items-center gap-1.5 text-[11px] font-medium text-[var(--text-main)] bg-[var(--primary-soft)] border border-[var(--border-color)] px-2 py-0.5 rounded-md">
