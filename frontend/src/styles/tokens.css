@@ -35,7 +35,7 @@
   --risk-warning: #B45309;
   --risk-warning-soft: #FFFBEB;
   --risk-danger: #B91C1C;
-  --risk-danger-soft: #FEF2F2;
+  --risk-danger-soft: rgba(185, 28, 28, 0.14);
 
   /* Form & Feedback Error (Strictly separated from risk-danger) */
   --feedback-error: #BE123C;
@@ -132,7 +132,7 @@
   --risk-warning: #FBBF24;
   --risk-warning-soft: rgba(251, 191, 36, 0.12);
   --risk-danger: #F87171;
-  --risk-danger-soft: rgba(248, 113, 113, 0.12);
+  --risk-danger-soft: rgba(248, 113, 113, 0.14);
 
   /* Form & Feedback Error */
   --feedback-error: #FB7185;

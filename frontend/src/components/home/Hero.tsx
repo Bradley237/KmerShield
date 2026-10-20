@@ -158,10 +158,17 @@ export const Hero: React.FC = () => {
                     </span>
                   </div>
 
-                  {/* Risk Badge strictly categorical (Danger) */}
-                  <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[var(--risk-danger-soft)] text-[var(--risk-danger)] border border-[var(--risk-danger)]/20">
-                    <AlertTriangle size={14} strokeWidth={2} />
-                    <span className="text-xs font-semibold">{t('home.hero.card.riskBadge')}</span>
+                  {/* Risk Badge strictly categorical (Danger at 14% opacity) */}
+                  <div
+                    className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold"
+                    style={{
+                      backgroundColor: 'color-mix(in srgb, var(--risk-danger) 14%, transparent)',
+                      color: 'var(--risk-danger)',
+                      border: '1px solid color-mix(in srgb, var(--risk-danger) 24%, transparent)',
+                    }}
+                  >
+                    <AlertTriangle size={14} strokeWidth={2} style={{ color: 'var(--risk-danger)' }} />
+                    <span>{t('home.hero.card.riskBadge')}</span>
                   </div>
                 </div>
 
@@ -177,7 +184,13 @@ export const Hero: React.FC = () => {
                   <div className="grid grid-cols-3 gap-2 overflow-hidden">
                     <div className="h-2 rounded-full bg-[var(--bg-surface-secondary)]" />
                     <div className="h-2 rounded-full bg-[var(--bg-surface-secondary)]" />
-                    <div className="h-2 rounded-full bg-[var(--risk-danger)] shadow-xs animate-segment-fill" />
+                    <div
+                      className="h-2 rounded-full animate-segment-fill"
+                      style={{
+                        backgroundColor: 'var(--risk-danger)',
+                        boxShadow: '0 0 6px color-mix(in srgb, var(--risk-danger) 25%, transparent)',
+                      }}
+                    />
                   </div>
                 </div>
 
