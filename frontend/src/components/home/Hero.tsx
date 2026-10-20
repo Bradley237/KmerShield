@@ -200,10 +200,10 @@ export const Hero: React.FC = () => {
                   </div>
                 </div>
 
-                {/* Breakdown of Reasons (Staggered Animation) */}
-                <div className="space-y-3">
+                {/* Breakdown of Reasons (Separated by thin dividers) */}
+                <div className="divide-y divide-[var(--border-color)]/60">
                   {/* Reason 1 */}
-                  <div className="animate-reason-1 flex items-start gap-3 p-3 rounded-xl bg-[var(--bg-app)] border border-[var(--border-color)]">
+                  <div className="animate-reason-1 flex items-start gap-3 py-3 first:pt-0">
                     <div className="w-5 h-5 rounded-full bg-[var(--risk-danger-soft)] text-[var(--risk-danger)] flex items-center justify-center flex-shrink-0 mt-0.5 text-xs font-bold">
                       1
                     </div>
@@ -218,7 +218,7 @@ export const Hero: React.FC = () => {
                   </div>
 
                   {/* Reason 2 */}
-                  <div className="animate-reason-2 flex items-start gap-3 p-3 rounded-xl bg-[var(--bg-app)] border border-[var(--border-color)]">
+                  <div className="animate-reason-2 flex items-start gap-3 py-3">
                     <div className="w-5 h-5 rounded-full bg-[var(--risk-danger-soft)] text-[var(--risk-danger)] flex items-center justify-center flex-shrink-0 mt-0.5 text-xs font-bold">
                       2
                     </div>
@@ -233,7 +233,7 @@ export const Hero: React.FC = () => {
                   </div>
 
                   {/* Reason 3 */}
-                  <div className="animate-reason-3 flex items-start gap-3 p-3 rounded-xl bg-[var(--bg-app)] border border-[var(--border-color)]">
+                  <div className="animate-reason-3 flex items-start gap-3 py-3 last:pb-0">
                     <div className="w-5 h-5 rounded-full bg-[var(--risk-danger-soft)] text-[var(--risk-danger)] flex items-center justify-center flex-shrink-0 mt-0.5 text-xs font-bold">
                       3
                     </div>
