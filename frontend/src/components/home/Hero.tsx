@@ -112,12 +112,30 @@ export const Hero: React.FC = () => {
                   {t('home.hero.bubble.greeting')}
                   <span className="mark-highlight-danger animate-sweep-1 font-semibold text-[var(--text-main)] inline-flex items-center gap-1 mx-0.5">
                     <span>{t('home.hero.bubble.alert1')}</span>
-                    <span className="inline-flex items-center justify-center w-3.5 h-3.5 rounded-full bg-[var(--risk-danger)] text-white text-[9px] font-bold leading-none shrink-0" aria-label="Signal 1">1</span>
+                    <span
+                      className="inline-flex items-center justify-center w-[18px] h-[18px] rounded-full text-[11px] font-semibold leading-none shrink-0"
+                      style={{
+                        backgroundColor: 'color-mix(in srgb, var(--risk-danger) 20%, transparent)',
+                        color: 'var(--risk-danger)',
+                      }}
+                      aria-label="Signal 1"
+                    >
+                      1
+                    </span>
                   </span>
                   {t('home.hero.bubble.middle')}
                   <span className="mark-highlight-danger animate-sweep-2 font-semibold text-[var(--text-main)] inline-flex items-center gap-1 mx-0.5">
                     <span>{t('home.hero.bubble.alert2')}</span>
-                    <span className="inline-flex items-center justify-center w-3.5 h-3.5 rounded-full bg-[var(--risk-danger)] text-white text-[9px] font-bold leading-none shrink-0" aria-label="Signal 2">2</span>
+                    <span
+                      className="inline-flex items-center justify-center w-[18px] h-[18px] rounded-full text-[11px] font-semibold leading-none shrink-0"
+                      style={{
+                        backgroundColor: 'color-mix(in srgb, var(--risk-danger) 20%, transparent)',
+                        color: 'var(--risk-danger)',
+                      }}
+                      aria-label="Signal 2"
+                    >
+                      2
+                    </span>
                   </span>
                   {t('home.hero.bubble.period')}
                 </p>
