@@ -253,8 +253,8 @@ export const Hero: React.FC = () => {
                 </div>
               </div>
 
-              {/* Layer 3: Floating Guarantee Chip (overlapping card edge) */}
-              <div className="absolute -top-3.5 right-6 z-20 animate-chip-interactive bg-[var(--bg-surface)] border border-[var(--border-color)] px-3.5 py-1.5 rounded-full shadow-lg flex items-center gap-2">
+              {/* Layer 3: Floating Guarantee Chip (overlapping bottom-right corner of card) */}
+              <div className="absolute -bottom-4 right-4 sm:-bottom-4 sm:right-6 z-20 animate-chip-interactive bg-[var(--bg-surface)] border border-[var(--border-color)] px-3.5 py-1.5 rounded-full shadow-lg flex items-center gap-2 select-none">
                 <div className="w-4 h-4 rounded-full bg-[var(--primary-soft)] text-[var(--primary)] flex items-center justify-center">
                   <Check size={12} strokeWidth={2.5} />
                 </div>
