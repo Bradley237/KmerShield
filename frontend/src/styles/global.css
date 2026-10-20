@@ -433,13 +433,15 @@ h4, h5, h6, .text-balance {
 }
 
 /* HowItWorks Part 1 dotted line animation */
+.reveal-visible .dotted-line-draw,
 .reveal-visible .line-draw {
+  clip-path: inset(0 0 0 0);
   stroke-dashoffset: 0;
-  transition: stroke-dashoffset 800ms cubic-bezier(0.22, 1, 0.36, 1);
+  transition: clip-path 800ms cubic-bezier(0.22, 1, 0.36, 1), stroke-dashoffset 800ms cubic-bezier(0.22, 1, 0.36, 1);
 }
+.dotted-line-draw,
 .line-draw {
-  stroke-dasharray: 4 4;
-  stroke-dashoffset: 100;
+  clip-path: inset(0 100% 0 0);
 }
 
 /* HowItWorks numbered circles pop */
@@ -509,7 +511,9 @@ h4, h5, h6, .text-balance {
     transform: none !important;
     opacity: 1 !important;
   }
+  .dotted-line-draw,
   .line-draw {
+    clip-path: inset(0 0 0 0) !important;
     stroke-dashoffset: 0 !important;
     transition: none !important;
   }

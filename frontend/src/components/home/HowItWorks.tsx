@@ -20,8 +20,11 @@ export const HowItWorks: React.FC = () => {
       {/* PART 1: Comment ça marche */}
       <div ref={part1Ref} className="bg-[var(--bg-app)] py-20 lg:py-28 relative overflow-hidden">
         <div className="max-w-[1200px] mx-auto px-6">
-          {/* Top Centered Header */}
+          {/* Top Centered Header with Pill Label */}
           <div className="reveal-item flex flex-col items-center text-center">
+            <span className="inline-flex items-center text-[11px] font-semibold text-[var(--primary)] uppercase tracking-wider bg-[var(--primary-soft)] px-3 py-1 rounded-full border border-[var(--primary)]/20 mb-4">
+              {t('home.howItWorks.eyebrow')}
+            </span>
             <h2 className="text-3xl sm:text-4xl lg:text-[44px] font-bold tracking-tight text-[var(--text-main)] leading-tight">
               {t('home.howItWorks.title')}
             </h2>
@@ -32,10 +35,35 @@ export const HowItWorks: React.FC = () => {
 
           {/* Three Steps with Connecting Line */}
           <div className="mt-16 relative">
-            {/* Dotted connecting line drawing from left to right */}
-            <div className="hidden md:block absolute top-5 left-[16.666%] right-[16.666%] h-2 z-0 pointer-events-none overflow-hidden">
-              <svg className="w-full h-2" width="100%" height="8" preserveAspectRatio="none" viewBox="0 0 100 2">
-                <line x1="0" y1="1" x2="100" y2="1" stroke="currentColor" strokeWidth="2" strokeDasharray="4 4" className="text-[var(--border-color)] line-draw" />
+            {/* Segment 1: Step 1 to Step 2 (stops 8px before each numbered circle) */}
+            <div className="hidden md:block absolute top-5 left-[calc(16.666%+28px)] right-[calc(50%+28px)] h-2 z-0 pointer-events-none overflow-hidden">
+              <svg className="w-full h-2 dotted-line-draw line-draw" width="100%" height="8" preserveAspectRatio="none">
+                <line
+                  x1="0"
+                  y1="4"
+                  x2="100%"
+                  y2="4"
+                  stroke="var(--border-color)"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeDasharray="2 8"
+                />
+              </svg>
+            </div>
+
+            {/* Segment 2: Step 2 to Step 3 (stops 8px before each numbered circle) */}
+            <div className="hidden md:block absolute top-5 left-[calc(50%+28px)] right-[calc(16.666%+28px)] h-2 z-0 pointer-events-none overflow-hidden">
+              <svg className="w-full h-2 dotted-line-draw line-draw" width="100%" height="8" preserveAspectRatio="none">
+                <line
+                  x1="0"
+                  y1="4"
+                  x2="100%"
+                  y2="4"
+                  stroke="var(--border-color)"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeDasharray="2 8"
+                />
               </svg>
             </div>
 
