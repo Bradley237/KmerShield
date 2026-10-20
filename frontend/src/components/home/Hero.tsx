@@ -94,7 +94,7 @@ export const Hero: React.FC = () => {
 
             <div className="relative w-full max-w-[540px]">
               {/* Layer 1: WhatsApp-style Incoming Message (Back Layer, slight rotation -2deg) */}
-              <div className="animate-chat-bubble relative -rotate-2 -mb-8 ml-4 mr-8 p-4 bg-[var(--bg-surface)]/95 backdrop-blur-sm rounded-2xl rounded-bl-sm border border-[var(--border-color)] shadow-md z-0 transition-transform duration-300 hover:rotate-0">
+              <div className="animate-chat-bubble relative -rotate-2 -mb-5 ml-4 mr-8 p-4 pb-9 bg-[var(--bg-surface)]/95 backdrop-blur-sm rounded-2xl rounded-bl-sm border border-[var(--border-color)] shadow-md z-0 transition-transform duration-300 hover:rotate-0">
                 <div className="flex items-center justify-between pb-2 border-b border-[var(--border-color)]/50 mb-2">
                   <div className="flex items-center gap-2">
                     <div className="w-5 h-5 rounded-full bg-[var(--bg-surface-raised)] border border-[var(--border-color)] text-[var(--text-muted)] flex items-center justify-center">
