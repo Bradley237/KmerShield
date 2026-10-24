@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import { Link, useNavigate, useSearchParams } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { useAuth } from '../../hooks/useAuth'
 import { POST_LOGIN_REDIRECT } from '../../services/authService'
@@ -8,6 +8,7 @@ export const Login: React.FC = () => {
   const { t } = useTranslation()
   const { login } = useAuth()
   const navigate = useNavigate()
+  const [searchParams] = useSearchParams()
 
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
@@ -21,7 +22,8 @@ export const Login: React.FC = () => {
 
     try {
       await login({ email, password })
-      navigate(POST_LOGIN_REDIRECT)
+      const redirectTarget = searchParams.get('redirect') || POST_LOGIN_REDIRECT
+      navigate(redirectTarget)
     } catch (err: any) {
       if (err.code === 'INVALID_CREDENTIALS') {
         setError(t('auth.login.invalidCredentials'))

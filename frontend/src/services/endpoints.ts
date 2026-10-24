@@ -19,4 +19,21 @@ export const ENDPOINTS = {
     ASSESS_LINK: '/api/eval/link/',                // TO VALIDATE with Back-end 1
     ASSESS_TEXT: '/api/eval/text/',                // TO VALIDATE with Back-end 1
   },
+  // Dashboard & Private Space Endpoints (TO VALIDATE with Back-end 2)
+  DASHBOARD: {
+    STATS: '/api/dashboard/stats/',
+    RECENT_ANALYSES: '/api/dashboard/recent/',
+    SYSTEM_STATUS: '/api/dashboard/system-status/',
+  },
+  ANALYSES: {
+    LIST: '/api/analyses/',
+    CREATE: '/api/analyses/',
+    DETAIL: (id: string) => `/api/analyses/${id}/`,
+    CANCEL: (id: string) => `/api/analyses/${id}/cancel/`,
+  },
+  ALERTS: {
+    LIST: '/api/alerts/',
+    MARK_READ: (id: string) => `/api/alerts/${id}/read/`,
+    MARK_ALL_READ: '/api/alerts/read-all/',
+  },
 } as const

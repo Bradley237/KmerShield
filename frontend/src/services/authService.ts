@@ -10,7 +10,7 @@ import type {
   AuthResponse,
 } from '../types/auth'
 
-export const POST_LOGIN_REDIRECT = '/'
+export const POST_LOGIN_REDIRECT = '/dashboard'
 
 const USE_MOCK = import.meta.env.VITE_USE_MOCK_API === 'true'
 

@@ -292,5 +292,177 @@
     "terms": "Terms",
     "contact": "Contact",
     "legal": "Legal"
+  },
+  "dashboard": {
+    "nav": {
+      "overview": "Overview",
+      "newAnalysis": "New analysis",
+      "analyses": "Analyses & Tracking",
+      "history": "History",
+      "alerts": "Alerts & Security",
+      "profile": "My Profile",
+      "settings": "Settings",
+      "logout": "Sign out",
+      "collapse": "Collapse sidebar",
+      "expand": "Expand sidebar",
+      "mainMenu": "Main menu",
+      "userMenu": "User menu",
+      "notifications": "Notifications",
+      "quickNew": "Start scan",
+      "backToHome": "Back to public website"
+    },
+    "user": {
+      "defaultRole": "Individual",
+      "merchantRole": "Merchant",
+      "verifiedStatus": "Verified account"
+    },
+    "breadcrumbs": {
+      "home": "Home",
+      "dashboard": "Dashboard",
+      "overview": "Overview",
+      "analyses": "Analyses",
+      "new": "New analysis",
+      "detail": "Analysis details",
+      "history": "History",
+      "alerts": "Alerts",
+      "profile": "Profile",
+      "settings": "Settings"
+    },
+    "forbidden": {
+      "title": "403 - Access Restricted",
+      "subtitle": "You do not have the required permissions to access this resource or perform this action.",
+      "description": "If you believe this is an error, please verify your account type or contact support.",
+      "backDashboard": "Back to dashboard",
+      "contactSupport": "Contact support"
+    },
+    "notFound": {
+      "title": "404 - Section Not Found",
+      "subtitle": "The dashboard section you requested does not exist or has been moved.",
+      "backDashboard": "Back to overview"
+    },
+    "authGuard": {
+      "verifying": "Verifying session...",
+      "pleaseWait": "Securely connecting to your member space..."
+    },
+    "status": {
+      "queued": "Queued",
+      "running": "Running...",
+      "completed": "Completed",
+      "failed": "Failed",
+      "cancelled": "Cancelled"
+    },
+    "overview": {
+      "welcomeBadge": "Digital Security Hub",
+      "welcomeTitle": "Welcome back, {{name}} 👋",
+      "welcomeSubtitle": "Evaluate suspicious transactions, messages, and links before committing. Your data remains completely private.",
+      "kpi": {
+        "total": "Total Analyses",
+        "low": "Low Risk",
+        "caution": "Caution Required",
+        "high": "High Risk",
+        "alerts": "Active Alerts"
+      },
+      "systemStatus": {
+        "label": "Cameroonian Heuristic Engine",
+        "operational": "Operational & Active",
+        "degraded": "Degraded Performance",
+        "maintenance": "Under Maintenance"
+      },
+      "recentSection": {
+        "title": "Recent Analyses",
+        "subtitle": "Your most recent security verifications",
+        "viewAll": "View all history",
+        "thType": "Type",
+        "thTarget": "Analyzed Resource",
+        "thRisk": "Risk Level",
+        "thDate": "Date & Time",
+        "thAction": "Action",
+        "detailsBtn": "View Report"
+      },
+      "typeLabel": {
+        "url": "Web Link",
+        "message": "Message / SMS",
+        "transaction": "Transaction",
+        "payment": "Payment"
+      },
+      "empty": {
+        "title": "No analyses run yet",
+        "description": "You have not verified any link, message, or transaction yet. Start now to protect your exchanges!",
+        "action": "Start My First Scan"
+      },
+      "error": {
+        "title": "Unable to load dashboard indicators",
+        "description": "An error occurred while fetching your security indicators.",
+        "retry": "Try again"
+      },
+      "loading": {
+        "title": "Loading your dashboard...",
+        "subtitle": "Fetching security metrics"
+      }
+    },
+    "newAnalysis": {
+      "title": "Start a new analysis",
+      "subtitle": "Assess a suspicious link, SMS / WhatsApp message, or launch the transaction questionnaire for clear guidance.",
+      "tabs": {
+        "url": "Suspicious Link (URL)",
+        "message": "Message / SMS / WhatsApp",
+        "transaction": "Transaction Evaluation"
+      },
+      "securityNotice": {
+        "urlTitle": "Non-execution guarantee",
+        "urlDesc": "KmerShield never executes or loads arbitrary URLs on its servers. Analysis is strictly textual and lexical to protect your safety.",
+        "messageTitle": "Privacy protection",
+        "messageDesc": "Never paste PIN codes, passwords, or personal banking credentials. Analyzed data is never shared with third parties.",
+        "transactionTitle": "Objective behavioral assessment",
+        "transactionDesc": "This questionnaire evaluates verifiable signals to assist your decision, without accusing or presuming anyone is an attacker."
+      },
+      "fields": {
+        "urlLabel": "Suspicious URL or link to analyze",
+        "urlPlaceholder": "e.g. https://orange-money-recharge-cm.free.nf/auth",
+        "urlHelper": "Enter the exact address as received in your message.",
+        "messageLabel": "Full text of SMS or message",
+        "messagePlaceholder": "e.g. Congratulations you have won 500,000 FCFA with MTN MoMo. Please pay 15,000 FCFA unlock fee...",
+        "messageHelper": "Paste the raw text without altering its content.",
+        "senderPhoneLabel": "Declared sender (optional)",
+        "senderPhonePlaceholder": "e.g. 670 12 34 56 or MTN-MOMO",
+        "platformLabel": "Reception channel",
+        "platforms": {
+          "whatsapp": "WhatsApp",
+          "sms": "SMS (Carrier)",
+          "facebook": "Facebook / Marketplace",
+          "other": "Other social network"
+        },
+        "consentCheckbox": "I confirm that I have authorization to analyze this resource and certify that it contains no passwords, secret PIN codes, or banking credentials.",
+        "consentRequired": "Explicit consent is mandatory before starting an analysis."
+      },
+      "questionnaire": {
+        "q1": "1. Can the other party provide reasonable verification of the product or their identity?",
+        "q1Hint": "A strict refusal significantly increases uncertainty.",
+        "q2": "2. Is full advance payment demanded without verifiable guarantee?",
+        "q2Hint": "Requirement of full wire prior to any shipping or physical meeting.",
+        "q3": "3. Are you being pressured to act immediately or keep the transaction secret?",
+        "q3Hint": "Artificial urgency and secrecy are frequent manipulation cues.",
+        "q4": "4. Can the payment be verified inside the provider's official mobile app?",
+        "q4Hint": "SMS messages and screenshots are easily forged.",
+        "q5": "5. Are price, delivery, and refund terms clearly documented?",
+        "q5Hint": "Vague terms complicate any subsequent dispute or recourse.",
+        "q6": "6. Is there a safer option (safe public meeting place, verified escrow platform)?",
+        "q6Hint": "Reduces uncertainty and reliance on verbal promises.",
+        "options": {
+          "yes": "Yes",
+          "no": "No",
+          "not_yet": "Not yet",
+          "partial": "Partial payment / Deposit",
+          "partially": "Partially",
+          "confirmed": "Yes, verified on my official app account",
+          "unconfirmed": "No, verified only via screenshot / SMS",
+          "na": "Not applicable",
+          "unknown": "Unknown"
+        }
+      },
+      "submitBtn": "Assess Risk Now",
+      "submittingBtn": "Running heuristic evaluation...",
+      "successToast": "Analysis completed successfully!"
+    }
   }
 }

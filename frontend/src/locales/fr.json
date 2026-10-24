@@ -292,5 +292,177 @@
     "terms": "Conditions",
     "contact": "Contact",
     "legal": "Mentions légales"
+  },
+  "dashboard": {
+    "nav": {
+      "overview": "Vue d'ensemble",
+      "newAnalysis": "Nouvelle analyse",
+      "analyses": "Analyses & Suivi",
+      "history": "Historique",
+      "alerts": "Alertes & Sécurité",
+      "profile": "Mon Profil",
+      "settings": "Paramètres",
+      "logout": "Déconnexion",
+      "collapse": "Réduire le menu",
+      "expand": "Développer le menu",
+      "mainMenu": "Menu principal",
+      "userMenu": "Menu utilisateur",
+      "notifications": "Notifications",
+      "quickNew": "Lancer une analyse",
+      "backToHome": "Retour au site public"
+    },
+    "user": {
+      "defaultRole": "Particulier",
+      "merchantRole": "Commerçant",
+      "verifiedStatus": "Compte vérifié"
+    },
+    "breadcrumbs": {
+      "home": "Accueil",
+      "dashboard": "Dashboard",
+      "overview": "Vue d'ensemble",
+      "analyses": "Analyses",
+      "new": "Nouvelle analyse",
+      "detail": "Détails de l'analyse",
+      "history": "Historique",
+      "alerts": "Alertes",
+      "profile": "Profil",
+      "settings": "Paramètres"
+    },
+    "forbidden": {
+      "title": "403 - Accès restreint",
+      "subtitle": "Vous n'avez pas les autorisations nécessaires pour accéder à cette ressource ou effectuer cette action.",
+      "description": "Si vous pensez qu'il s'agit d'une anomalie, veuillez vérifier votre type de compte ou contacter le support technique.",
+      "backDashboard": "Retour au tableau de bord",
+      "contactSupport": "Contacter l'assistance"
+    },
+    "notFound": {
+      "title": "404 - Page introuvable",
+      "subtitle": "La section du tableau de bord demandée n'existe pas ou a été déplacée.",
+      "backDashboard": "Retour à la vue d'ensemble"
+    },
+    "authGuard": {
+      "verifying": "Vérification de la session en cours...",
+      "pleaseWait": "Connexion sécurisée à votre espace membre..."
+    },
+    "status": {
+      "queued": "En attente",
+      "running": "En cours...",
+      "completed": "Terminé",
+      "failed": "Échec",
+      "cancelled": "Annulé"
+    },
+    "overview": {
+      "welcomeBadge": "Espace de Sécurité Numérique",
+      "welcomeTitle": "Bonjour, {{name}} 👋",
+      "welcomeSubtitle": "Évaluez vos transactions, messages et liens suspects avant de vous engager. Vos données restent confidentielles.",
+      "kpi": {
+        "total": "Analyses effectuées",
+        "low": "Risque faible",
+        "caution": "Vigilance requise",
+        "high": "Risque élevé",
+        "alerts": "Alertes actives"
+      },
+      "systemStatus": {
+        "label": "Moteur heuristique camerounais",
+        "operational": "Opérationnel & Actif",
+        "degraded": "Service ralenti",
+        "maintenance": "En maintenance"
+      },
+      "recentSection": {
+        "title": "Dernières analyses",
+        "subtitle": "Vos vérifications les plus récentes",
+        "viewAll": "Voir tout l'historique",
+        "thType": "Type",
+        "thTarget": "Ressource analysée",
+        "thRisk": "Niveau de risque",
+        "thDate": "Date & Heure",
+        "thAction": "Action",
+        "detailsBtn": "Consulter le rapport"
+      },
+      "typeLabel": {
+        "url": "Lien web",
+        "message": "Message / SMS",
+        "transaction": "Transaction",
+        "payment": "Paiement"
+      },
+      "empty": {
+        "title": "Aucune analyse effectuée pour le moment",
+        "description": "Vous n'avez pas encore vérifié de message, de lien ou de transaction. Démarrez dès maintenant pour sécuriser vos échanges !",
+        "action": "Lancer ma première analyse"
+      },
+      "error": {
+        "title": "Impossible de charger les données du tableau de bord",
+        "description": "Une erreur est survenue lors de la récupération de vos indicateurs de sécurité.",
+        "retry": "Réessayer"
+      },
+      "loading": {
+        "title": "Chargement de votre tableau de bord...",
+        "subtitle": "Récupération des indicateurs de sécurité"
+      }
+    },
+    "newAnalysis": {
+      "title": "Lancer une nouvelle analyse",
+      "subtitle": "Évaluez un lien suspect, un SMS / message WhatsApp ou lancez le questionnaire de transaction pour obtenir des conseils clairs.",
+      "tabs": {
+        "url": "Lien suspect (URL)",
+        "message": "Message / SMS / WhatsApp",
+        "transaction": "Évaluation de Transaction"
+      },
+      "securityNotice": {
+        "urlTitle": "Garantie de non-exécution",
+        "urlDesc": "KmerShield n'exécute et ne charge jamais d'URLs arbitraires sur ses serveurs. L'analyse est strictement textuelle et lexicale pour préserver votre intégrité.",
+        "messageTitle": "Protection de la vie privée",
+        "messageDesc": "Ne collez jamais de code PIN, mot de passe ou identifiant bancaire personnel. Les données analysées ne sont jamais transmises à des tiers.",
+        "transactionTitle": "Évaluation comportementale neutre",
+        "transactionDesc": "Ce questionnaire évalue des signaux objectifs et vérifiables pour vous aider à décider, sans présumer ni accuser qui que ce soit."
+      },
+      "fields": {
+        "urlLabel": "Lien ou URL suspecte à analyser",
+        "urlPlaceholder": "Ex. https://orange-money-recharge-cm.free.nf/auth",
+        "urlHelper": "Saisissez l'adresse complète telle que reçue dans votre message.",
+        "messageLabel": "Texte intégral du message ou SMS",
+        "messagePlaceholder": "Ex. Félicitations vous avez gagné 500 000 FCFA avec MTN MoMo. Veuillez payer 15 000 FCFA de frais de déblocage...",
+        "messageHelper": "Collez le texte brut sans modifier son contenu.",
+        "senderPhoneLabel": "Expéditeur déclaré (facultatif)",
+        "senderPhonePlaceholder": "Ex. 670 12 34 56 ou MTN-MOMO",
+        "platformLabel": "Canal de réception",
+        "platforms": {
+          "whatsapp": "WhatsApp",
+          "sms": "SMS (Opérateur)",
+          "facebook": "Facebook / Marketplace",
+          "other": "Autre réseau social"
+        },
+        "consentCheckbox": "Je confirme disposer de l'autorisation d'analyser cette ressource et je certifie qu'elle ne contient aucun mot de passe, code PIN secret ou identifiant bancaire.",
+        "consentRequired": "Le consentement explicite est obligatoire avant de lancer une analyse."
+      },
+      "questionnaire": {
+        "q1": "1. L'autre partie peut-elle fournir une vérification raisonnable du produit ou de son identité ?",
+        "q1Hint": "Un refus catégorique accroît fortement l'incertitude.",
+        "q2": "2. Le paiement intégral est-il exigé à l'avance sans garantie vérifiable ?",
+        "q2Hint": "Exigence d'un transfert total avant toute expédition ou remise en main propre.",
+        "q3": "3. Vous pousse-t-on à agir immédiatement ou à garder la transaction secrète ?",
+        "q3Hint": "L'urgence et le secret sont des techniques de manipulation récurrentes.",
+        "q4": "4. Le paiement peut-il être vérifié dans l'application officielle du prestataire ?",
+        "q4Hint": "Un SMS ou une capture d'écran peut être facilement falsifié.",
+        "q5": "5. Les conditions de prix, livraison et remboursement sont-elles clairement documentées ?",
+        "q5Hint": "Des conditions floues compliquent tout recours ultérieur.",
+        "q6": "6. Existe-t-il une option plus sûre (lieu public sécurisé, remise contre paiement direct) ?",
+        "q6Hint": "Réduit l'incertitude et la dépendance aux promesses verbales.",
+        "options": {
+          "yes": "Oui",
+          "no": "Non",
+          "not_yet": "Pas encore",
+          "partial": "Paiement partiel / Acompte",
+          "partially": "Partiellement",
+          "confirmed": "Oui, vérifié sur mon compte officiel",
+          "unconfirmed": "Non, vérifié uniquement par capture / SMS",
+          "na": "Sans objet",
+          "unknown": "Inconnu"
+        }
+      },
+      "submitBtn": "Lancer l'analyse du risque",
+      "submittingBtn": "Évaluation heuristique en cours...",
+      "successToast": "Analyse effectuée avec succès !"
+    }
   }
 }
